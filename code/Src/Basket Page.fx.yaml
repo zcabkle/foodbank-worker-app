@@ -1,0 +1,328 @@
+"'Basket Page' As screen":
+
+    "'Appbar (Basket)' As 'Appbar Cmpnt'":
+        Y: =1036
+        ZIndex: =2
+
+    "'Topbar (Basket)' As 'Topbar Cmpnt'":
+        ZIndex: =3
+
+    "'Basket_Gallery (Basket)' As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =675
+        Items: =colBasket
+        Layout: =Layout.Vertical
+        TemplateFill: =
+        TemplatePadding: =10
+        TemplateSize: =184
+        Visible: =Not('Your basket is empty (Basket)'.Visible)
+        Width: =620
+        X: =6
+        Y: =175
+        ZIndex: =12
+
+        HtmlText2_5 As htmlViewer:
+            Height: =184
+            HtmlText: |-
+                ="<div style='margin:0px;width:599px;height:170px;background-color:#;box-shadow:0 3px 3px 3px  #ccc; border-radius:20px'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Width: =610
+            ZIndex: =1
+
+        Button8_3 As button:
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.View
+            Fill: =NeitherColor
+            Height: =170
+            HoverBorderColor: =
+            HoverFill: =
+            OnSelect: =
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =24
+            Text: =""
+            Width: =599
+            ZIndex: =2
+
+        Image1 As image:
+            BorderThickness: =1
+            Height: =128
+            Image: =If(IsBlank(LookUp(Stock, ItemPK = ThisItem.ID).Image), SampleImage, LookUp(Stock, ItemPK = ThisItem.ID).Image)
+            OnSelect: =Select(Parent)
+            Width: =128
+            X: =36
+            Y: =21
+            ZIndex: =3
+
+        Title2 As label:
+            Color: =RGBA(0, 18, 107, 1)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image1.Width - 104
+            X: =178
+            Y: =14
+            ZIndex: =4
+
+        Icon12 As icon.Trash:
+            Icon: =Icon.Trash
+            OnSelect: =Remove(colBasket, ThisItem)
+            Width: =0
+            X: =558
+            ZIndex: =5
+
+        Label8 As label:
+            Color: =RGBA(0, 18, 107, 1)
+            Height: =62
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: |-
+                ="Quantity:"
+            Width: =145
+            X: =202
+            Y: =68
+            ZIndex: =6
+
+        Dropdown3 As dropdown:
+            BorderThickness: =1.5
+            ChevronBackground: =RGBA(219, 219, 219, 1)
+            ChevronDisabledBackground: =RGBA(0, 0, 0, 0)
+            ChevronDisabledFill: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(0, 18, 107, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(116, 116, 116, 1), -20%)
+            ChevronHoverFill: =RGBA(0, 18, 107, 1)
+            Default: =ThisItem.Quantity
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Height: =62
+            HoverColor: =RGBA(0, 18, 107, 1)
+            HoverFill: =RGBA(153, 207, 236, 1)
+            Items: =Sequence(50)
+            OnChange: |-
+                =Patch(colBasket, LookUp(colBasket, ID = ThisItem.ID), { Quantity: Dropdown3.Selected.Value });
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 18, 107, 1)
+            PressedColor: =RGBA(0, 18, 107, 1)
+            PressedFill: =RGBA(153, 207, 236, 1)
+            SelectionColor: =RGBA(0, 18, 107, 1)
+            SelectionFill: =varMenuSecondaryColor
+            Size: =21
+            Width: =116
+            X: =347
+            Y: =68
+            ZIndex: =7
+
+        Icon13 As icon.Trash:
+            Height: =51
+            Icon: =Icon.Trash
+            OnSelect: |-
+                =Remove(colBasket, ThisItem);
+                Notify("Item removed from basket.", NotificationType.Error);
+            Width: =51
+            X: =522
+            Y: =73
+            ZIndex: =8
+
+    "'Type_of_transaction_Radio (Basket)' As radio":
+        Default: ="Incoming Transaction"
+        Height: =82
+        Items: =["In", "Out"]
+        Layout: =Layout.Horizontal
+        RadioSize: =50
+        Size: =18
+        Width: =252
+        X: =232
+        Y: =866
+        ZIndex: =13
+
+    "'Type of transaction (Basket)' As label":
+        Height: =70
+        Size: =21
+        Text: |-
+            ="Type:"
+        Width: =94
+        X: =155
+        Y: =866
+        ZIndex: =15
+
+    "'Your basket is empty (Basket)' As label":
+        Align: =Align.Center
+        Height: =191
+        Size: =20
+        Text: ="Your basket is empty. Add items to this basket to record transaction information."
+        Visible: =IsEmpty('Basket_Gallery (Basket)'.AllItems)
+        Width: =398
+        X: =117
+        Y: =412
+        ZIndex: =16
+
+    "'Continue_btn (Basket)' As button":
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =70
+        OnSelect: |-
+            =Collect(
+                invalidTransaction,
+                false
+            );
+            If(
+                IsEmpty('Basket_Gallery (Basket)'.AllItems),
+                Collect(
+                    invalidTransaction,
+                    true
+                );
+                
+            );
+            If(
+                Not(IsEmpty('Basket_Gallery (Basket)'.AllItems)) && 'Type_of_transaction_Radio (Basket)'.Selected.Value = "Out",
+                ForAll(
+                    colBasket As basketItem,
+                    If(
+                        Value(
+                            LookUp(
+                                Stock,
+                                ItemPK = basketItem.ID
+                            ).Quantity
+                        ) < Value(basketItem.Quantity),
+                        Collect(
+                            invalidTransaction,
+                            true
+                        )
+                    )
+                )
+            );
+            If(
+                Last(invalidTransaction).Value = true,
+                Notify(
+                    "This transaction is invalid. You do not have enough items in stock to complete this transaction or your basket is completely empty.",
+                    NotificationType.Error
+                ),
+                'Type_of_transaction_Radio (Basket)'.Selected.Value = "In",
+                Navigate('Submit Incoming Transaction Page'),
+                'Type_of_transaction_Radio (Basket)'.Selected.Value = "Out",
+                Navigate('Submit Outgoing Transaction Page')
+            )
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
+        Size: =24
+        Text: ="Continue"
+        Width: =233
+        X: =335
+        Y: =948
+        ZIndex: =17
+
+    "'Cancel_btn (Basket)' As button":
+        Fill: =RGBA(149, 149, 149, 1)
+        Height: =70
+        HoverFill: =ColorFade(RGBA(116, 116, 116, 1), -20%)
+        OnSelect: =Back()
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
+        Size: =24
+        Text: ="Cancel"
+        Width: =233
+        X: =72
+        Y: =948
+        ZIndex: =18
+
+    Icon2 As icon.Add:
+        Color: =RGBA(54, 176, 75, 1)
+        Icon: =Icon.Add
+        OnSelect: |-
+            =Set(
+                tempCurrentQuantity,
+                0
+            );
+            Set(
+                newQuantity,
+                0
+            );
+            If(
+                Not(IsBlank(ComboBox1.Selected.ItemPK)),
+                Set(
+                    alreadyExists,
+                    CountRows(
+                        Filter(
+                            colBasket,
+                            ID = ComboBox1.Selected.ItemPK
+                        )
+                    ) = 1
+                );
+                If(
+                    Not(alreadyExists),
+                    Collect(
+                        colBasket,
+                        {
+                            ID: ComboBox1.Selected.ItemPK,
+                            Quantity: 1,
+                            Name: ComboBox1.Selected.Name
+                        }
+                    )
+                );
+                If(
+                    alreadyExists,
+                    Set(
+                        tempCurrentQuantity,
+                        LookUp(
+                            colBasket,
+                            ID = ComboBox1.Selected.ItemPK
+                        ).Quantity
+                    )
+                );
+                Set(
+                    newQuantity,
+                    tempCurrentQuantity + 1
+                );
+                Patch(
+                    colBasket,
+                    LookUp(
+                        colBasket,
+                        ID = ComboBox1.Selected.ItemPK
+                    ),
+                    {Quantity: newQuantity}
+                );
+                Notify(
+                    "Item added to basket",
+                    NotificationType.Success
+                );
+                ,
+                Notify(
+                    "Invalid item",
+                    NotificationType.Error
+                )
+            )
+        X: =553
+        Y: =82
+        ZIndex: =20
+
+    ComboBox1 As combobox:
+        ChevronBackground: =RGBA(219, 219, 219, 1)
+        ChevronFill: =RGBA(0, 18, 107, 1)
+        DisplayFields: =["cr967_name"]
+        Height: =70
+        InputTextPlaceholder: ="Find items to add to transaction"
+        Items: =Filter(Stock, FoodbankKey.FoodbankPK = SelectedFoodbank)
+        SearchFields: =["cr967_name"]
+        SearchItems: =Search(Filter(Stock, FoodbankKey.FoodbankPK = SelectedFoodbank),ComboBox1.SearchText,"cr967_name")
+        SelectionColor: =RGBA(0, 18, 107, 1)
+        SelectionFill: =RGBA(204, 231, 246, 1)
+        SelectMultiple: =false
+        Size: =21
+        Width: =506
+        X: =32
+        Y: =79
+        ZIndex: =21
+

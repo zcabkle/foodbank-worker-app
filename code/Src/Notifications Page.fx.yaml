@@ -1,0 +1,177 @@
+"'Notifications Page' As screen":
+
+    "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =891
+        Items: |-
+            =Search(
+                Filter(Notifications, ToFoodbankKey.FoodbankPK = SelectedFoodbank),
+                'Search (Home)_1'.Text,
+                "cr967_message"
+            )
+        Layout: =Layout.Vertical
+        TemplateFill: =
+        TemplatePadding: =10
+        TemplateSize: =166
+        Visible: =Not(Label25.Visible)
+        Width: =630
+        X: =10
+        Y: =159
+        ZIndex: =1
+
+        HtmlText2_10 As htmlViewer:
+            Height: =166
+            HtmlText: |-
+                ="<div style='margin:0px;width:599px;height:155px;background-color:#;box-shadow:0px 3px 3px 3px  #ccc; border-radius:20px'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Width: =610
+            ZIndex: =1
+
+        Button8_10 As button:
+            DisplayMode: =DisplayMode.View
+            Fill: =NeitherColor
+            Height: =155
+            HoverBorderColor: =
+            HoverFill: =
+            OnSelect: =
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =24
+            Text: =""
+            Width: =599
+            ZIndex: =2
+
+        Title3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Message
+            VerticalAlign: =VerticalAlign.Top
+            Width: =
+            X: =
+            Y: =44
+            ZIndex: =3
+
+        Subtitle2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.NotificationPK
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title3.Width
+            X: =Title3.X
+            Y: =Title3.Y + Title3.Height + 4
+            ZIndex: =4
+
+        Label24 As label:
+            Color: =RGBA(0, 18, 107, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =95
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.Message
+            Width: =479
+            X: =11
+            Y: =14
+            ZIndex: =5
+
+        Label26 As label:
+            Color: =RGBA(0, 18, 107, 1)
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.DateTime
+            Width: =560
+            X: =7
+            Y: =98
+            ZIndex: =6
+
+        Icon1 As icon.Trash:
+            Height: =29
+            Icon: =Icon.Trash
+            OnSelect: =RemoveIf(Notifications, NotificationPK = ThisItem.NotificationPK);
+            Width: =29
+            X: =546
+            Y: =109
+            ZIndex: =7
+
+        Icon3 As icon.Information:
+            Height: =47
+            Icon: =Icon.Information
+            OnSelect: =Select(Parent); Navigate('Notification Foodbank More Information Page');
+            Width: =47
+            X: =528
+            Y: =44
+            ZIndex: =8
+
+        Button11_2 As button:
+            BorderColor: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,UnderstockedColor,ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,OverstockedColor)
+            BorderThickness: =3
+            Color: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,UnderstockedColor, ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked, OverstockedColor)
+            DisabledBorderColor: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,UnderstockedColor,ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,OverstockedColor)
+            DisabledColor: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,UnderstockedColor,ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,OverstockedColor)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =36
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =40
+            RadiusBottomRight: =40
+            RadiusTopLeft: =40
+            RadiusTopRight: =40
+            Size: =18
+            Text: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,"Understocked Item",ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,"Overstocked Item")
+            Width: =250
+            X: =278
+            Y: =109
+            ZIndex: =9
+
+    "'Appbar Cmpnt_5' As 'Appbar Cmpnt'":
+        Y: =1036
+        ZIndex: =2
+
+    "'Topbar Cmpnt_5' As 'Topbar Cmpnt'":
+        ZIndex: =3
+
+    "'Search (Home)_1' As text":
+        Clear: =true
+        Color: =RGBA(0, 18, 107, 1)
+        Default: =""
+        Height: =70
+        HintText: ="Search for a notification"
+        HoverFill: =RGBA(215, 215, 215, 0.8)
+        PaddingLeft: =10
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
+        Size: =21
+        Width: =514
+        X: =15
+        Y: =75
+        ZIndex: =4
+
+    "'Filter_btn Cmpnt_8' As 'Filter_btn Cmpnt'":
+        X: =547
+        Y: =70
+        ZIndex: =5
+
+    Label25 As label:
+        Height: =68
+        Size: =21
+        Text: ="No results found."
+        Visible: =IsEmpty(Gallery3.AllItems)
+        Width: =277
+        X: =181
+        Y: =571
+        ZIndex: =7
+

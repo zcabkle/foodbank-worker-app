@@ -1,0 +1,117 @@
+"'Daily Visit Page' As screen":
+    OnVisible: =
+    Width: =
+
+    "'Topbar Cmpnt_1' As 'Topbar Cmpnt'":
+
+    "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(0, 134, 208, 1)
+        Height: =910
+        Items: =LookUp(colVisitsGroupedByDate, Text(YourDate) = Gallery1.Selected.Date).DateGroup
+        Layout: =Layout.Vertical
+        TemplateFill: =
+        TemplatePadding: =10
+        TemplateSize: =206
+        Width: =620
+        X: =10
+        Y: =115
+        ZIndex: =2
+
+        HtmlText2_6 As htmlViewer:
+            Height: =210
+            HtmlText: |-
+                ="<div style='margin:0px;width:604px;height:199px;background-color:#;box-shadow:0px 3px 3px 3px  #ccc; border-radius:20px'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Width: =610
+            ZIndex: =1
+
+        Button8_5 As button:
+            BorderThickness: =0
+            Fill: =NeitherColor
+            Height: =199
+            HoverBorderColor: =
+            HoverFill: =
+            OnSelect: =
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =24
+            Text: =""
+            Width: =604
+            ZIndex: =2
+
+        Subtitle5 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.cr967_comments
+            VerticalAlign: =VerticalAlign.Top
+            Width: =
+            X: =
+            Y: =
+            ZIndex: =3
+
+        Label11 As label:
+            Color: =RGBA(0, 18, 107, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =57
+            OnSelect: =Select(Parent)
+            Size: =17
+            Text: |-
+                ="Visit by " & LookUp(Visitors, VisitorPK = Text(ThisItem.cr967_VisitorKey.VisitorPK)).Forename & " " & LookUp(Visitors, VisitorPK = Text(ThisItem.cr967_VisitorKey.VisitorPK)).Surname & " at " & Text(ThisItem.cr967_datetime, "hh:mm:ss")
+            Underline: =true
+            Width: =331
+            X: =27
+            Y: =15
+            ZIndex: =4
+
+        Label6 As label:
+            Color: =RGBA(0, 18, 107, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =131
+            OnSelect: =Select(Parent)
+            Size: =15
+            Text: |-
+                ="Person: " & ThisItem.cr967_person & Char(13) & "Family: " & ThisItem.cr967_family & Char(13) & "Children: " & ThisItem.cr967_children & Char(13) & "Pets: " & ThisItem.cr967_pets
+            Width: =135
+            X: =27
+            Y: =57
+            ZIndex: =5
+
+        Label17 As label:
+            Color: =RGBA(0, 18, 107, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =115
+            OnSelect: =Select(Parent)
+            Size: =15
+            Text: |-
+                ="Comments: " & If(Not(ThisItem.cr967_comments), "No comments recorded for this visit.", ThisItem.cr967_comments)
+            VerticalAlign: =VerticalAlign.Top
+            Width: =401
+            X: =177
+            Y: =72
+            ZIndex: =6
+
+    Label15 As label:
+        Color: =RGBA(0, 18, 107, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =21
+        Text: ="Visits made on " & Gallery1.Selected.Date
+        Underline: =true
+        Width: =374
+        X: =133
+        Y: =60
+        ZIndex: =3
+
+    "'Appbar Cmpnt_1' As 'Appbar Cmpnt'":
+        Y: =1036
+        ZIndex: =4
+

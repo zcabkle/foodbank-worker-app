@@ -1,0 +1,231 @@
+"'Home Page' As screen":
+    OnVisible: =
+
+    "'MyStock_Gallery (Home)' As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =
+        Fill: |
+            =White
+        Height: =811
+        Items: |
+            =Search(Filter(Stock, FoodbankKey.FoodbankPK = SelectedFoodbank), 'Search (Home)'.Text, "cr967_name")
+        Layout: =Layout.Vertical
+        TemplateFill: =
+        TemplatePadding: =10
+        TemplateSize: =205
+        Visible: =Not('Empty Stock (Home)'.Visible)
+        Width: =620
+        X: =10
+        Y: =236
+        ZIndex: =1
+
+        HtmlText2_1 As htmlViewer:
+            Height: =202
+            HtmlText: |-
+                ="<div style='margin:0px;width:604px;height:196px;background-color:#;box-shadow:0px 3px 3px 3px  #ccc; border-radius:20px'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Width: =610
+            ZIndex: =1
+
+        Button8_6 As button:
+            AutoDisableOnSelect: =false
+            BorderColor: =RGBA(109, 49, 162, 1)
+            BorderStyle: =BorderStyle.Dotted
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.View
+            Fill: =NeitherColor
+            Height: =196
+            HoverBorderColor: =
+            HoverFill: =
+            OnSelect: =
+            PressedBorderColor: =
+            PressedColor: =
+            PressedFill: =
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =24
+            Text: =""
+            Width: =604
+            ZIndex: =2
+
+        Title4 As label:
+            Color: =RGBA(0, 18, 107, 1)
+            Height: =116
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.cr967_name
+            Width: =188
+            X: =173
+            Y: =29
+            ZIndex: =3
+
+        Button1 As button:
+            Fill: =RGBA(54, 176, 75, 1)
+            Height: =35
+            HoverFill: =ColorFade(RGBA(52, 165, 71, 1), -20%)
+            OnSelect: |-
+                =Set(tempCurrentQuantity, 0);
+                Set(newQuantity, 0);
+                
+                Set(alreadyExists, CountRows(Filter(colBasket, ID = ThisItem.ItemPK)) = 1);
+                
+                If(Not(alreadyExists), Collect(colBasket, {ID:ThisItem.ItemPK, Quantity:1, Name:ThisItem.Name}));
+                
+                If(alreadyExists, Set(tempCurrentQuantity, LookUp(colBasket, ID = ThisItem.ItemPK).Quantity));
+                
+                Set(newQuantity, tempCurrentQuantity + 1);
+                
+                Patch(colBasket, LookUp(colBasket, ID = ThisItem.ItemPK), { Quantity: newQuantity });
+                
+                Notify("Item added to basket", NotificationType.Success);
+            RadiusBottomLeft: =18
+            RadiusBottomRight: =18
+            RadiusTopLeft: =18
+            RadiusTopRight: =18
+            Size: =14
+            Text: ="Change Storage"
+            Width: =155
+            X: =383
+            Y: =134
+            ZIndex: =4
+
+        Icon7 As icon.NextArrow:
+            Height: =49
+            Icon: =Icon.NextArrow
+            OnSelect: |-
+                =Select(Parent);
+                Navigate('View Stock Information Page');
+            Width: =49
+            X: =538
+            Y: =63
+            ZIndex: =5
+
+        Image4 As image:
+            BorderColor: =If(IsBlank(ThisItem.Image), RGBA(0, 18, 107, 1), RGBA(0, 0, 0, 0))
+            BorderThickness: =1
+            Height: =134
+            Image: =If(IsBlank(ThisItem.Image), SampleImage, ThisItem.Image)
+            OnSelect: =Select(Parent)
+            Width: =133
+            X: =19
+            Y: =31
+            ZIndex: =7
+
+        Label29 As label:
+            Align: =Align.Center
+            Height: =29
+            OnSelect: =Select(Parent)
+            Size: =14
+            Text: |-
+                ="Quantity: "
+            Width: =114
+            X: =403
+            Y: =56
+            ZIndex: =8
+
+        Label32 As label:
+            Align: =Align.Center
+            Height: =52
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.Quantity
+            Width: =53
+            X: =434
+            Y: =75
+            ZIndex: =9
+
+        Button11 As button:
+            BorderColor: =If(ThisItem.StockLevel=StockLevel.Understocked,UnderstockedColor,ThisItem.StockLevel=StockLevel.Neither,NeitherColor,ThisItem.StockLevel=StockLevel.Overstocked,OverstockedColor,RGBA(0,0,0,0))
+            BorderThickness: =3
+            Color: =If(ThisItem.StockLevel=StockLevel.Understocked,UnderstockedColor,ThisItem.StockLevel=StockLevel.Neither,NeitherColor,ThisItem.StockLevel=StockLevel.Overstocked,OverstockedColor,RGBA(0,0,0,0))
+            DisabledBorderColor: =If(ThisItem.StockLevel=StockLevel.Understocked,UnderstockedColor,ThisItem.StockLevel=StockLevel.Neither,NeitherColor,ThisItem.StockLevel=StockLevel.Overstocked,OverstockedColor,RGBA(0,0,0,0))
+            DisabledColor: =If(ThisItem.StockLevel=StockLevel.Understocked,UnderstockedColor,ThisItem.StockLevel=StockLevel.Neither,NeitherColor,ThisItem.StockLevel=StockLevel.Overstocked,OverstockedColor,RGBA(0,0,0,0))
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =41
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =40
+            RadiusBottomRight: =40
+            RadiusTopLeft: =40
+            RadiusTopRight: =40
+            Size: =18
+            Text: =ThisItem.StockLevel
+            Visible: =ThisItem.StockLevel=StockLevel.Understocked || ThisItem.StockLevel=StockLevel.Overstocked
+            Width: =195
+            X: =169
+            Y: =131
+            ZIndex: =10
+
+    "'Topbar (Home)' As 'Topbar Cmpnt'":
+        ZIndex: =2
+
+    "'Appbar (Home)' As 'Appbar Cmpnt'":
+        Y: =1036
+        ZIndex: =3
+
+    "'Add_Item_btn (Home)' As button":
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(54, 176, 75, 1)
+        Height: =70
+        HoverBorderColor: =Self.BorderColor
+        HoverFill: =ColorFade(RGBA(52, 165, 71, 1), -20%)
+        OnSelect: =Navigate('Add Item Page');
+        PressedBorderColor: =RGBA(54, 176, 75, 1)
+        PressedColor: =RGBA(54, 176, 75, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
+        Size: =24
+        Text: ="Add New Item"
+        Width: =604
+        X: =18
+        Y: =160
+        ZIndex: =4
+
+    "'Search (Home)' As text":
+        Clear: =true
+        Color: =RGBA(0, 18, 107, 1)
+        Default: =""
+        Height: =70
+        HintText: ="Search for an item"
+        HoverFill: =RGBA(215, 215, 215, 0.8)
+        PaddingLeft: =10
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
+        Size: =21
+        Width: =514
+        X: =18
+        Y: =75
+        ZIndex: =5
+
+    "'Empty Stock (Home)' As label":
+        Align: =Align.Center
+        Height: =255
+        Size: =21
+        Text: ="No results found."
+        Visible: |
+            =IsEmpty('MyStock_Gallery (Home)'.AllItems)
+        Width: =349
+        X: =145
+        Y: =514
+        ZIndex: =6
+
+    "'Filter_btn Cmpnt_1' As 'Filter_btn Cmpnt'":
+        X: =547
+        Y: =70
+        ZIndex: =7
+
