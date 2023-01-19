@@ -14,39 +14,22 @@
         TemplateFill: |
             =
         TemplatePadding: =10
-        TemplateSize: =173
-        Width: =620
-        X: =10
-        Y: =126
+        TemplateSize: =183
+        Width: =633
+        X: =7
+        Y: =123
         ZIndex: =1
 
-        HtmlText2_3 As htmlViewer:
-            Height: =179
+        HtmlText2_14 As htmlViewer:
+            Height: =186
             HtmlText: |-
-                ="<div style='margin:0px;width:599px;height:161px;background-color:#;box-shadow:0px 3px 3px 3px  #ccc; border-radius:20px'></div>"
+                ="<div style='margin-left:5px; margin-top:5px; width:599px;height:170px; border-radius: 20px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Width: =611
+            Width: =613
             ZIndex: =1
-
-        Button8_7 As button:
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.View
-            Fill: =NeitherColor
-            Height: =161
-            HoverBorderColor: =
-            HoverFill: =
-            OnSelect: =
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Size: =24
-            Text: =""
-            Width: =599
-            ZIndex: =2
 
         Title1 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -59,9 +42,9 @@
             Text: =ThisItem.Name
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
-            X: =17
-            Y: =14
-            ZIndex: =3
+            X: =27
+            Y: =19
+            ZIndex: =4
 
         Subtitle1 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -74,9 +57,9 @@
             Text: =ThisItem.PhoneNumber
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
-            X: =17
-            Y: =110
-            ZIndex: =4
+            X: =27
+            Y: =114
+            ZIndex: =5
 
         Label5 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -85,9 +68,9 @@
             Size: =21
             Text: =ThisItem.Address
             Width: =568
-            X: =9
-            Y: =40
-            ZIndex: =5
+            X: =22
+            Y: =44
+            ZIndex: =6
 
         Icon7_5 As icon.NextArrow:
             Height: =49
@@ -98,7 +81,7 @@
             Width: =49
             X: =536
             Y: =55
-            ZIndex: =6
+            ZIndex: =7
 
     "'Select Your Foodbank (Select Foodbank)' As label":
         Color: =RGBA(0, 18, 107, 1)

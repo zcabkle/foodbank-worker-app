@@ -5,8 +5,8 @@
     "AllowAccessToGlobals": false,
     "AllowCustomization": true,
     "Description": "",
-    "Name": "Add Button",
-    "TemplateGuid": "059889040fde4aadb2a876c9460e62c4"
+    "Name": "Component3",
+    "TemplateGuid": "e63136cad1134afa8afa0fdeff9d91b5"
   },
   "ComponentType": "CanvasComponent",
   "CustomGroupControlTemplateName": "",
@@ -19,8 +19,8 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638097393344594798",
-  "Name": "059889040fde4aadb2a876c9460e62c4",
+  "LastModifiedTimestamp": "638097425922629394",
+  "Name": "e63136cad1134afa8afa0fdeff9d91b5",
   "OverridableProperties": {},
-  "Version": "638097392763557810"
+  "Version": "638097425922251697"
 }

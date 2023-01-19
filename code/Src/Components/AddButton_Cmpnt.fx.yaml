@@ -1,4 +1,4 @@
-"'Add Button' As CanvasComponent":
+AddButton_Cmpnt As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: =75
     Width: =610

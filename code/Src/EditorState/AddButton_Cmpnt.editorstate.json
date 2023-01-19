@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "Add Button": {
+    "AddButton_Cmpnt": {
       "AllowAccessToGlobals": false,
       "ControlPropertyState": [
         "Fill",
@@ -32,28 +32,13 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Add Button",
+      "Name": "AddButton_Cmpnt",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Design",
-          "PropertyName": "ZIndex",
-          "RuleProviderType": "System"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Y",
-          "RuleProviderType": "System"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "X",
-          "RuleProviderType": "System"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Width",
+          "PropertyName": "Fill",
           "RuleProviderType": "System"
         },
         {
@@ -63,7 +48,22 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Fill",
+          "PropertyName": "Width",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "X",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Y",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "ZIndex",
           "RuleProviderType": "System"
         }
       ],
@@ -71,5 +71,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Add Button"
+  "TopParentName": "AddButton_Cmpnt"
 }

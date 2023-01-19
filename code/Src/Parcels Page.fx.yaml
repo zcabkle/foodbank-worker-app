@@ -21,7 +21,7 @@
         ZIndex: =2
 
     "'Parcels_Gallery (Parcels)' As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Height: =818
+        Height: =793
         Items: |-
             =Search(
                 Filter(
@@ -36,40 +36,21 @@
         TemplateFill: |
             =
         TemplatePadding: =10
-        TemplateSize: =193
+        TemplateSize: =218
         Visible: =Not('Empty Parcels (Parcels)'.Visible)
-        Width: =620
-        X: =10
-        Y: =236
+        Y: =243
         ZIndex: =3
 
         HtmlText2_2 As htmlViewer:
-            Height: =197
+            Height: =218
             HtmlText: |-
-                ="<div style='margin:0px;width:604px;height:182px;background-color:#;box-shadow:0 3px 3px 3px  #ccc; border-radius:20px'></div>"
+                ="<div style='margin-left:5px; margin-top:5px; width:604px;height:200px; border-radius: 20px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Width: =610
+            Width: =620
             ZIndex: =1
-
-        Button8_2 As button:
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.View
-            Fill: =NeitherColor
-            Height: =182
-            HoverBorderColor: =
-            HoverFill: =
-            OnSelect: =
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Size: =24
-            Text: =""
-            Width: =604
-            ZIndex: =2
 
         Image4_1 As image:
             BorderColor: =If(IsBlank(ThisItem.Image), RGBA(0, 18, 107, 1), RGBA(0, 0, 0, 0))
@@ -77,10 +58,14 @@
             Height: =128
             Image: =If(IsBlank(ThisItem.Image), SampleImage, ThisItem.Image)
             OnSelect: =Select(Parent)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
             Width: =128
             X: =13
             Y: =24
-            ZIndex: =3
+            ZIndex: =2
 
         Icon7_1 As icon.NextArrow:
             Height: =49
@@ -89,9 +74,9 @@
                 =Select(Parent);
                 Navigate('View Parcel Information Page')
             Width: =49
-            X: =533
-            Y: =64
-            ZIndex: =4
+            X: =531
+            Y: =74
+            ZIndex: =3
 
         Label1 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -103,7 +88,7 @@
             Width: =322
             X: =163
             Y: =6
-            ZIndex: =5
+            ZIndex: =4
 
         Label9 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -115,7 +100,7 @@
             Width: =382
             X: =163
             Y: =53
-            ZIndex: =6
+            ZIndex: =5
 
     "'Add_Parcel_btn (Parcels)' As button":
         Fill: =RGBA(54, 176, 75, 1)
@@ -154,4 +139,17 @@
     "'Appbar (Parcels)' As 'Appbar Cmpnt'":
         Y: =1036
         ZIndex: =8
+
+    HtmlText2_15 As htmlViewer:
+        Height: =85
+        HtmlText: |-
+            ="<div style='margin-left:5px; margin-top:5px; width:514px;height:70px; border-radius: 40px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset 0px 0px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Width: =529
+        X: =15
+        Y: =70
+        ZIndex: =9
 
