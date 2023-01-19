@@ -172,6 +172,14 @@
             "InvariantPropertyName": "PaddingRight",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "false",
+            "InvariantPropertyName": "OnSelect",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
           }
         ],
         "ControlUniqueId": "18",
@@ -263,7 +271,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "RGBA(219, 219, 219, 1)",
+            "InvariantScript": "NeitherColor",
             "Property": "Fill",
             "RuleProviderType": "Unknown"
           },
@@ -421,6 +429,12 @@
             "Category": "Design",
             "InvariantScript": "0",
             "Property": "PaddingRight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Behavior",
+            "InvariantScript": "",
+            "Property": "OnSelect",
             "RuleProviderType": "Unknown"
           }
         ],
@@ -3271,7 +3285,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "RGBA(219, 219, 219, 1)",
+            "InvariantScript": "NeitherColor",
             "Property": "Fill",
             "RuleProviderType": "Unknown"
           },
@@ -3478,7 +3492,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638097314378610210",
+    "LastModifiedTimestamp": "638097339696835109",
     "Name": "Appbar Cmpnt",
     "Rules": [
       {
@@ -3537,7 +3551,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638097314378610210",
+  "LastModifiedTimestamp": "638097339696835109",
   "Name": "72ca80fb63914274b26885d974d83f5c",
   "OverridableProperties": {},
   "Version": "638061935486295173"

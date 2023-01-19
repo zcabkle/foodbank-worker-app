@@ -8,11 +8,12 @@
 
     Button9 As button:
         BorderThickness: =0
-        Fill: =RGBA(219, 219, 219, 1)
+        Fill: =NeitherColor
         Height: =100
         HoverBorderColor: =
         HoverFill: |
             =
+        OnSelect: =
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
@@ -31,7 +32,7 @@
 
     Button9_1 As button:
         BorderThickness: =0
-        Fill: =RGBA(219, 219, 219, 1)
+        Fill: =NeitherColor
         Height: =50
         HoverBorderColor: =
         HoverFill: |

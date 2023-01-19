@@ -141,9 +141,9 @@ App As appinfo:
         Set(
             varMenuPrimaryColor,
             RGBA(
-                219,
-                219,
-                219,
+                245,
+                245,
+                245,
                 1
             )
         );
