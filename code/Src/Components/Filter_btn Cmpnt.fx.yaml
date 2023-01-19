@@ -1,20 +1,31 @@
 "'Filter_btn Cmpnt' As CanvasComponent":
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =75
-    Width: =75
+    Height: =100
+    Width: =100
     X: =0
     Y: =0
     ZIndex: =1
 
+    HtmlText1 As htmlViewer:
+        Height: =91
+        HtmlText: |-
+            ="<div style='margin-left:5px; width:70px;height:70px; border-radius: 40px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 3px 3px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+        Width: =100
+        ZIndex: =1
+
+    "'Filter_Icon (Home)_1' As icon.Filter":
+        FocusedBorderThickness: =0
+        Height: =51
+        Icon: =Icon.Filter
+        Width: =51
+        X: =20
+        Y: =16
+        ZIndex: =2
+
     "'Filter_btn (Home)_1' As button":
-        BorderColor: |-
-            =RGBA(
-                149,
-                149,
-                149,
-                1
-            )
-        Fill: =RGBA(219, 219, 219, 1)
+        BorderColor: =RGBA(0, 18, 107, 1)
+        BorderThickness: =1
+        Fill: =RGBA(0, 0, 0, 0)
         Height: =70
         HoverColor: =RGBA(0, 0, 0, 0)
         HoverFill: |
@@ -26,16 +37,7 @@
         Size: =24
         Text: =""
         Width: =70
-        X: =2
-        Y: =3
-        ZIndex: =1
-
-    "'Filter_Icon (Home)_1' As icon.Filter":
-        FocusedBorderThickness: =0
-        Height: =51
-        Icon: =Icon.Filter
-        Width: =51
-        X: =11
-        Y: =13
-        ZIndex: =2
+        X: =10
+        Y: =6
+        ZIndex: =3
 

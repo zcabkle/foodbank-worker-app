@@ -1,0 +1,8 @@
+"'Add Button' As CanvasComponent":
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =75
+    Width: =610
+    X: =0
+    Y: =0
+    ZIndex: =1
+

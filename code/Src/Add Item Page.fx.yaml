@@ -1,11 +1,19 @@
 "'Add Item Page' As screen":
     OnVisible: =
 
+    "'Banner (Add Item)' As rectangle":
+        Fill: =RGBA(190, 190, 190, 0.8)
+        Height: =79
+        Width: =640
+        Y: =40
+        ZIndex: =1
+
     "'Appbar (Add Item)' As 'Appbar Cmpnt'":
         Y: =1036
+        ZIndex: =2
 
     "'Topbar (Add Item)' As 'Topbar Cmpnt'":
-        ZIndex: =2
+        ZIndex: =3
 
     AddItemForm As form:
         DataSource: =Stock
@@ -15,7 +23,7 @@
         OnSuccess: =Notify("Item successfully added", NotificationType.Success)
         Width: =640
         Y: =120
-        ZIndex: =3
+        ZIndex: =4
 
         Image_DataCard3 As typedDataCard.addLargePictureCard:
             BorderStyle: =BorderStyle.Solid
@@ -737,13 +745,6 @@
                 Y: =DataCardKey53.Y
                 ZIndex: =4
 
-    "'Banner (Add Item)' As rectangle":
-        Fill: =RGBA(190, 190, 190, 0.8)
-        Height: =60
-        Width: =640
-        Y: =60
-        ZIndex: =4
-
     "'Complete_Icon (Add Item)' As icon.Check":
         Color: =RGBA(255, 255, 255, 1)
         Height: =45
@@ -804,7 +805,7 @@
         Width: =45
         X: =590
         Y: =68
-        ZIndex: =6
+        ZIndex: =5
 
     "'Cancel_Icon (Add Item)' As icon.Cancel":
         Color: =RGBA(255, 255, 255, 1)
@@ -814,5 +815,5 @@
         Width: =45
         X: =5
         Y: =68
-        ZIndex: =7
+        ZIndex: =6
 
