@@ -8,7 +8,8 @@
 
     Button8 As button:
         BorderThickness: =0
-        Fill: =RGBA(153, 207, 236, 1)
+        Color: =RGBA(0, 18, 107, 1)
+        Fill: =RGBA(0, 18, 107, 1)
         Height: =60
         HoverBorderColor: =
         HoverFill: =
@@ -19,10 +20,10 @@
         PressedBorderColor: =
         PressedColor: =
         PressedFill: =
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
         Size: =24
         Text: =""
         Width: =640
@@ -30,7 +31,8 @@
 
     Button8_11 As button:
         BorderThickness: =0
-        Fill: =RGBA(153, 207, 236, 1)
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =25
         HoverBorderColor: =
         HoverFill: =
         PaddingBottom: =0
@@ -50,16 +52,16 @@
         ZIndex: =2
 
     ArrowIcon As icon.ArrowLeft:
+        Color: =RGBA(255, 255, 255, 1)
         Height: =60
         Icon: =Icon.ArrowLeft
         Width: =70
-        X: =22
+        X: =10
         ZIndex: =4
 
     Topbar_Arrow_btn As button:
         AutoDisableOnSelect: =false
         BorderThickness: =0
-        Color: =RGBA(0, 13, 75, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =Transparent
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -78,10 +80,10 @@
         Size: =24
         Text: =""
         Width: =70
-        X: =22
         ZIndex: =5
 
     NotificationIcon As icon.Bell:
+        Color: =RGBA(255, 255, 255, 1)
         Height: =50
         Icon: =Icon.Bell
         OnSelect: =Navigate('Notifications Page')
@@ -91,6 +93,7 @@
         ZIndex: =6
 
     PersonIcon As icon.Person:
+        Color: =RGBA(255, 255, 255, 1)
         Height: =50
         Icon: =Icon.Person
         OnSelect: =Navigate('Profile Page')
@@ -101,7 +104,7 @@
 
     Label2 As label:
         Align: =Align.Center
-        Color: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
         Height: =60
         Size: =19

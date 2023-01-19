@@ -58,7 +58,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ArrowIcon",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -211,7 +211,14 @@
         },
         "BorderStyle",
         "FocusedBorderColor",
-        "Color",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Color",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledColor",
         {
           "AFDDataSourceName": "",
@@ -2072,7 +2079,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Topbar_Arrow_btn",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
