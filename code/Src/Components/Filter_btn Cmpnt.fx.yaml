@@ -24,7 +24,6 @@
 
     "'Filter_btn (Home)_1' As button":
         BorderColor: =RGBA(0, 18, 107, 1)
-        BorderThickness: =1
         Fill: =RGBA(0, 0, 0, 0)
         Height: =70
         HoverColor: =RGBA(0, 0, 0, 0)

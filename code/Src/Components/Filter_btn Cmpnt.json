@@ -361,7 +361,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "1",
+            "InvariantScript": "2",
             "Property": "BorderThickness",
             "RuleProviderType": "Unknown"
           },
@@ -789,7 +789,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638097408282403669",
+    "LastModifiedTimestamp": "638097408666136954",
     "Name": "Filter_btn Cmpnt",
     "Rules": [
       {
@@ -848,7 +848,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638097408282403669",
+  "LastModifiedTimestamp": "638097408666136954",
   "Name": "395a3b566f5149b9bf30f7e1de820d41",
   "OverridableProperties": {},
   "Version": "638085531081843323"
