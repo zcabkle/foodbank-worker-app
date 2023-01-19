@@ -19,7 +19,7 @@
         HtmlText2_1 As htmlViewer:
             Height: =220
             HtmlText: |-
-                ="<div style='margin-left:5px; margin-top:5px; width:604px;height:200px; border-radius: 20px; background-color:rgba(245, 245, 245, 1); box-shadow: 0px 5px 5px 0px rgba(145, 192, 255, 0.5), inset -4px -4px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+                ="<div style='margin-left:5px; margin-top:5px; width:604px;height:200px; border-radius: 20px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0

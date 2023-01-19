@@ -808,7 +808,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "If(ThisItem.Id = LookUp(colAppBar, Screen = App.ActiveScreen).Id, RGBA(219, 75, 255, 0.5), RGBA(0, 18, 107, 1))",
+                "InvariantScript": "If(ThisItem.Id = LookUp(colAppBar, Screen = App.ActiveScreen).Id, RGBA(228, 120, 255, 1), RGBA(0, 18, 107, 1))",
                 "Property": "Fill",
                 "RuleProviderType": "Unknown"
               },
@@ -3506,7 +3506,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638097384681285784",
+    "LastModifiedTimestamp": "638097385836976338",
     "Name": "Appbar Cmpnt",
     "Rules": [
       {
@@ -3565,7 +3565,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638097384681285784",
+  "LastModifiedTimestamp": "638097385836976338",
   "Name": "72ca80fb63914274b26885d974d83f5c",
   "OverridableProperties": {},
   "Version": "638061935486295173"
