@@ -74,9 +74,12 @@
             BorderThickness: =0
             Fill: =RGBA(0, 0, 0, 0)
             Height: =46
+            HoverFill: =RGBA(0, 18, 107, 1)
             OnSelect: |-
                 =Select(Parent);
                 Navigate('Fill Visit Info Page');
+            PressedBorderColor: =RGBA(0, 18, 107, 1)
+            PressedColor: =RGBA(0, 18, 107, 1)
             RadiusBottomLeft: =2010
             RadiusBottomRight: =2010
             RadiusTopLeft: =2010
