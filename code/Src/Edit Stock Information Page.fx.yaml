@@ -1,10 +1,27 @@
 "'Edit Stock Information Page' As screen":
 
+    "'Banner (Edit Stock Information)' As rectangle":
+        Fill: |-
+            =If(
+                'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Understocked,
+            	UnderstockedColor,
+                'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Neither,
+            	NeitherColor,
+                'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Overstocked,
+            	OverstockedColor,
+            	RGBA(0, 0, 0, 0)
+            )
+        Height: =94
+        Width: =640
+        Y: =25
+        ZIndex: =1
+
     "'Appbar (Edit Stock Information)' As 'Appbar Cmpnt'":
         Y: =1036
+        ZIndex: =2
 
     "'Topbar (Edit Stock Information)' As 'Topbar Cmpnt'":
-        ZIndex: =2
+        ZIndex: =3
 
     EditItemForm As form:
         DataSource: =Stock
@@ -14,7 +31,7 @@
         OnSuccess: =Notify("Item successfully changed", NotificationType.Success)
         Width: =640
         Y: =120
-        ZIndex: =3
+        ZIndex: =4
 
         Image_DataCard2 As typedDataCard.addLargePictureCard:
             BorderStyle: =BorderStyle.Solid
@@ -774,22 +791,6 @@
                 Wrap: =false
                 Y: =DataCardKey40.Y
                 ZIndex: =4
-
-    "'Banner (Edit Stock Information)' As rectangle":
-        Fill: |-
-            =If(
-                'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Understocked,
-            	UnderstockedColor,
-                'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Neither,
-            	NeitherColor,
-                'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Overstocked,
-            	OverstockedColor,
-            	RGBA(0, 0, 0, 0)
-            )
-        Height: =60
-        Width: =640
-        Y: =60
-        ZIndex: =4
 
     "'Item Name (Edit Stock Information)' As label":
         Align: =Align.Center

@@ -1,17 +1,18 @@
 "'Add Parcel Page' As screen":
 
+    "'Banner (Add Parcel)' As rectangle":
+        Fill: =NeitherColor
+        Height: =92
+        Width: =640
+        Y: =27
+        ZIndex: =1
+
     "'Topbar (Add Parcel)' As 'Topbar Cmpnt'":
+        ZIndex: =2
 
     "'Appbar (Add Parcel)' As 'Appbar Cmpnt'":
         Y: =1036
-        ZIndex: =2
-
-    "'Banner (Add Parcel)' As rectangle":
-        Fill: =RGBA(190, 190, 190, 0.8)
-        Height: =60
-        Width: =640
-        Y: =60
-        ZIndex: =4
+        ZIndex: =3
 
     "'Complete_Icon (Add Parcel)' As icon.Check":
         Height: =45
@@ -20,7 +21,7 @@
         Width: =45
         X: =590
         Y: =68
-        ZIndex: =6
+        ZIndex: =4
 
     "'Cancel_Icon (Add Parcel)' As icon.Cancel":
         Height: =45
@@ -29,7 +30,7 @@
         Width: =45
         X: =5
         Y: =68
-        ZIndex: =7
+        ZIndex: =5
 
     AddParcelForm As form:
         DataSource: =Parcels
@@ -39,7 +40,7 @@
         OnSuccess: =Notify("Parcel successfully added.", NotificationType.Success)
         Width: =640
         Y: =136
-        ZIndex: =8
+        ZIndex: =6
 
         Image_DataCard4 As typedDataCard.addLargePictureCard:
             BorderStyle: =BorderStyle.Solid

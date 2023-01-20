@@ -1,11 +1,20 @@
 "'Edit Foodbank Page' As screen":
     Fill: =
 
+    "'Banner (View Parcel Information)_1' As rectangle":
+        Fill: |
+            =NeitherColor
+        Height: =80
+        Width: =640
+        Y: =40
+        ZIndex: =1
+
     "'Topbar Cmpnt_3' As 'Topbar Cmpnt'":
+        ZIndex: =2
 
     "'Appbar Cmpnt_3' As 'Appbar Cmpnt'":
         Y: =1036
-        ZIndex: =2
+        ZIndex: =3
 
     Form2 As form:
         DataSource: =Foodbanks
@@ -15,7 +24,7 @@
         OnSuccess: =Notify("Foodbank successfully updated", NotificationType.Success)
         Width: =640
         Y: =119
-        ZIndex: =3
+        ZIndex: =4
 
         Image_DataCard10 As typedDataCard.addLargePictureCard:
             BorderStyle: =BorderStyle.Solid
@@ -636,14 +645,6 @@
                 Wrap: =false
                 Y: =DataCardKey82.Y
                 ZIndex: =4
-
-    "'Banner (View Parcel Information)_1' As rectangle":
-        Fill: |
-            =NeitherColor
-        Height: =60
-        Width: =640
-        Y: =60
-        ZIndex: =4
 
     "'Complete_Icon  (Edit Parcel Information)_1' As icon.Check":
         Height: =45

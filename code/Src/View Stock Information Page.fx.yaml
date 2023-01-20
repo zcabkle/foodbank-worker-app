@@ -1,10 +1,27 @@
 "'View Stock Information Page' As screen":
 
+    "'Banner (View Stock Information)' As rectangle":
+        Fill: |-
+            =If(
+                'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Understocked,
+            	UnderstockedColor,
+                'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Neither,
+            	NeitherColor,
+                'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Overstocked,
+            	OverstockedColor,
+            	RGBA(0, 0, 0, 0)
+            )
+        Height: =81
+        Width: =640
+        Y: =38
+        ZIndex: =1
+
     "'Appbar (View Stock Information)' As 'Appbar Cmpnt'":
         Y: =1036
+        ZIndex: =2
 
     "'Topbar (View Stock Information)' As 'Topbar Cmpnt'":
-        ZIndex: =2
+        ZIndex: =3
 
     "'Display Item Form (View Stock Information)' As formViewer":
         DataSource: =Stock
@@ -13,7 +30,7 @@
         NumberOfColumns: =1
         Width: =640
         Y: =130
-        ZIndex: =3
+        ZIndex: =4
 
         Image_DataCard1 As typedDataCard.largeImageViewCard:
             BorderStyle: =BorderStyle.Solid
@@ -517,22 +534,6 @@
                 X: =DataCardKey31.X + DataCardKey31.Width
                 Y: =10
                 ZIndex: =2
-
-    "'Banner (View Stock Information)' As rectangle":
-        Fill: |-
-            =If(
-                'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Understocked,
-            	UnderstockedColor,
-                'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Neither,
-            	NeitherColor,
-                'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Overstocked,
-            	OverstockedColor,
-            	RGBA(0, 0, 0, 0)
-            )
-        Height: =60
-        Width: =640
-        Y: =60
-        ZIndex: =4
 
     "'Item Name (View Stock Information)' As label":
         Align: =Align.Center

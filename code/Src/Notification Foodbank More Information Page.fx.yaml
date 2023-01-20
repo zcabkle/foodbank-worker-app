@@ -1,10 +1,18 @@
 "'Notification Foodbank More Information Page' As screen":
 
+    "'Banner (View Stock Information)_1' As rectangle":
+        Fill: =If(Gallery3.Selected.NotificationMessageType = NotificationMessageType.ItemUnderstocked, UnderstockedColor, OverstockedColor)
+        Height: =175
+        Width: =640
+        Y: =37
+        ZIndex: =1
+
     "'Appbar Cmpnt_6' As 'Appbar Cmpnt'":
         Y: =1036
+        ZIndex: =2
 
     "'Topbar Cmpnt_6' As 'Topbar Cmpnt'":
-        ZIndex: =2
+        ZIndex: =3
 
     FormViewer3 As formViewer:
         DataSource: =Foodbanks
@@ -12,7 +20,7 @@
         Item: =Gallery3.Selected.FromFoodbankKey
         Width: =640
         Y: =224
-        ZIndex: =3
+        ZIndex: =4
 
         Name_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
@@ -281,13 +289,6 @@
                 X: =DataCardKey91.X + DataCardKey91.Width
                 Y: =10
                 ZIndex: =2
-
-    "'Banner (View Stock Information)_1' As rectangle":
-        Fill: =If(Gallery3.Selected.NotificationMessageType = NotificationMessageType.ItemUnderstocked, UnderstockedColor, OverstockedColor)
-        Height: =153
-        Width: =640
-        Y: =60
-        ZIndex: =4
 
     Label27 As label:
         Color: =RGBA(0, 18, 107, 1)

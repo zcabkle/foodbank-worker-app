@@ -1,10 +1,18 @@
 "'Your Profile Page' As screen":
 
+    "'Banner (View Parcel Information)_2' As rectangle":
+        Fill: =NeitherColor
+        Height: =90
+        Width: =640
+        Y: =29
+        ZIndex: =1
+
     "'Appbar Cmpnt_4' As 'Appbar Cmpnt'":
         Y: =1036
+        ZIndex: =2
 
     "'Topbar Cmpnt_4' As 'Topbar Cmpnt'":
-        ZIndex: =2
+        ZIndex: =3
 
     FormViewer1 As formViewer:
         DataSource: =Users
@@ -16,7 +24,7 @@
             )
         Width: =640
         Y: =125
-        ZIndex: =3
+        ZIndex: =4
 
         "'Primary Email_DataCard1' As typedDataCard.emailViewCard":
             BorderStyle: =BorderStyle.Solid
@@ -171,11 +179,4 @@
                 X: =DataCardKey28.X + DataCardKey28.Width
                 Y: =10
                 ZIndex: =2
-
-    "'Banner (View Parcel Information)_2' As rectangle":
-        Fill: =NeitherColor
-        Height: =60
-        Width: =640
-        Y: =60
-        ZIndex: =4
 

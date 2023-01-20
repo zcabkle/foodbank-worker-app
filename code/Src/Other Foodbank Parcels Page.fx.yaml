@@ -16,38 +16,21 @@
         Layout: =Layout.Vertical
         TemplateFill: =
         TemplatePadding: =10
-        TemplateSize: =218
+        TemplateSize: =213
         Visible: =Not('Empty Parcels (Other Foodbank Parcels)'.Visible)
-        Width: =620
-        X: =10
         Y: =214
         ZIndex: =4
 
-        HtmlText2_11 As htmlViewer:
-            Height: =232
+        HtmlText2_9 As htmlViewer:
+            Height: =217
             HtmlText: |-
-                ="<div style='margin:0px;width:604px;height:200px;background-color:#;box-shadow:0px 3px 3px 3px  #ccc; border-radius:20px'></div>"
+                ="<div style='margin-left:0px; margin-top:0px; width:604px;height:200px; border-radius: 20px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
             Width: =620
             ZIndex: =1
-
-        Button10 As button:
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.View
-            Fill: =NeitherColor
-            Height: =200
-            OnSelect: =Select(Parent)
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Size: =24
-            Text: =""
-            Width: =604
-            ZIndex: =2
 
         Image3_1 As image:
             BorderColor: =If(IsBlank(ThisItem.Image), RGBA(0, 18, 107, 1), RGBA(0, 0, 0, 0))
@@ -58,7 +41,7 @@
             Width: =128
             X: =14
             Y: =32
-            ZIndex: =3
+            ZIndex: =2
 
         Subtitle4_1 As label:
             Height: =Self.Size * 1.8
@@ -72,7 +55,7 @@
             Width: =
             X: =
             Y: =
-            ZIndex: =4
+            ZIndex: =3
 
         Label18_2 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -84,7 +67,7 @@
             Width: =434
             X: =157
             Y: =51
-            ZIndex: =5
+            ZIndex: =4
 
         Label19_1 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -95,7 +78,7 @@
             Text: =ThisItem.Name
             Width: =389
             X: =157
-            ZIndex: =6
+            ZIndex: =5
 
         Icon7_4 As icon.NextArrow:
             Height: =49
@@ -104,9 +87,9 @@
                 =Select(Parent);
                 Navigate('View Parcel Information Other Foodbank Page');
             Width: =49
-            X: =542
+            X: =530
             Y: =71
-            ZIndex: =7
+            ZIndex: =6
 
     "'Viewing parcels at foodbank X (Other Foodbank Parcels)' As label":
         Align: =Align.Center

@@ -685,12 +685,11 @@
         Align: =Align.Center
         Color: =RGBA(0, 18, 107, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =35
+        Height: =59
         Size: =21
         Text: ="Viewing stock at " & 'Other_Foodbanks_Gallery (Other Foodbanks)'.Selected.Name
-        Width: =469
-        X: =85
-        Y: =70
+        Width: =640
+        Y: =60
         ZIndex: =6
 
     "'Item Name (View Stock Information Other Foodbank)' As label":

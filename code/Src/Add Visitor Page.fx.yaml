@@ -1,17 +1,18 @@
 "'Add Visitor Page' As screen":
 
-    "'Appbar Cmpnt_7' As 'Appbar Cmpnt'":
-        Y: =1036
-
-    "'Topbar Cmpnt_7' As 'Topbar Cmpnt'":
-        ZIndex: =2
-
     "'Banner (Edit Parcel Information)_1' As rectangle":
         Fill: =NeitherColor
-        Height: =60
+        Height: =84
         Width: =640
-        Y: =60
-        ZIndex: =4
+        Y: =35
+        ZIndex: =1
+
+    "'Appbar Cmpnt_7' As 'Appbar Cmpnt'":
+        Y: =1036
+        ZIndex: =2
+
+    "'Topbar Cmpnt_7' As 'Topbar Cmpnt'":
+        ZIndex: =3
 
     "'Complete_Icon  (Edit Parcel Information)_2' As icon.Check":
         Height: =45
@@ -20,7 +21,7 @@
         Width: =45
         X: =590
         Y: =68
-        ZIndex: =5
+        ZIndex: =4
 
     "'Cancel _Icon (Edit Parcel Information)_1' As icon.Cancel":
         Height: =45
@@ -29,7 +30,7 @@
         Width: =45
         X: =5
         Y: =68
-        ZIndex: =6
+        ZIndex: =5
 
     Form3 As form:
         DataSource: =Visitors
@@ -37,7 +38,7 @@
         Height: =914
         Width: =640
         Y: =118
-        ZIndex: =7
+        ZIndex: =6
 
         VisitorPK_DataCard2 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid

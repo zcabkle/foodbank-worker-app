@@ -1,10 +1,18 @@
 "'View Parcel Information Page' As screen":
 
+    "'Banner (View Parcel Information)' As rectangle":
+        Fill: =NeitherColor
+        Height: =77
+        Width: =640
+        Y: =42
+        ZIndex: =1
+
     "'Appbar (View Parcel Information)' As 'Appbar Cmpnt'":
         Y: =1036
+        ZIndex: =2
 
     "'Topbar (View Parcel Information)' As 'Topbar Cmpnt'":
-        ZIndex: =2
+        ZIndex: =3
 
     DisplayParcelForm As formViewer:
         DataSource: =Parcels
@@ -12,7 +20,7 @@
         Item: ='Parcels_Gallery (Parcels)'.Selected
         Width: =640
         Y: =118
-        ZIndex: =3
+        ZIndex: =4
 
         Image_DataCard5 As typedDataCard.largeImageViewCard:
             BorderStyle: =BorderStyle.Solid
@@ -194,13 +202,6 @@
                 X: =DataCardKey61.X + DataCardKey61.Width
                 Y: =10
                 ZIndex: =2
-
-    "'Banner (View Parcel Information)' As rectangle":
-        Fill: =NeitherColor
-        Height: =60
-        Width: =640
-        Y: =60
-        ZIndex: =4
 
     "'Parcel Name (View Parcel Information)' As label":
         Align: =Align.Center

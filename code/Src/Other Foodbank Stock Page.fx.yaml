@@ -86,7 +86,7 @@
             Size: =21
             Text: =ThisItem.Name
             Width: =242
-            X: =162
+            X: =173
             Y: =13
             ZIndex: =4
 
@@ -144,19 +144,21 @@
 
         Label29_1 As label:
             Align: =Align.Center
+            Color: =RGBA(0, 18, 107, 1)
             FontWeight: =FontWeight.Semibold
-            Height: =35
+            Height: =32
             OnSelect: =Select(Parent)
             Size: =14
             Text: |-
                 ="Quantity: "
-            Width: =191
-            X: =374
-            Y: =62
+            Width: =109
+            X: =415
+            Y: =63
             ZIndex: =8
 
         Label32_1 As label:
             Align: =Align.Center
+            Color: =RGBA(0, 18, 107, 1)
             FontWeight: =FontWeight.Semibold
             Height: =52
             OnSelect: =Select(Parent)

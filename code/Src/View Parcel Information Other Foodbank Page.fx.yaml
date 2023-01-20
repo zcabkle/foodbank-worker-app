@@ -1,10 +1,19 @@
 "'View Parcel Information Other Foodbank Page' As screen":
 
+    "'Banner (View Parcel Information Other Foodbank)' As rectangle":
+        Fill: |
+            =NeitherColor
+        Height: =80
+        Width: =640
+        Y: =40
+        ZIndex: =1
+
     "'Appbar (View Parcel Information Other Foodbank)' As 'Appbar Cmpnt'":
         Y: =1036
+        ZIndex: =2
 
     "'Topbar (View Parcel Information Other Foodbank)' As 'Topbar Cmpnt'":
-        ZIndex: =2
+        ZIndex: =3
 
     "'View Parcel Information Other Foodbank Form (View Parcel Information Other Foodbank)' As form":
         DataSource: =Parcels
@@ -13,7 +22,7 @@
         Item: ='Other_Foodbank_Parcel_Gallery (Other Foodbank Parcels)'.Selected
         Width: =640
         Y: =177
-        ZIndex: =3
+        ZIndex: =4
 
         Image_DataCard8 As typedDataCard.addLargePictureCard:
             BorderStyle: =BorderStyle.Solid
@@ -302,14 +311,6 @@
                 Wrap: =false
                 Y: =DataCardKey3.Y
                 ZIndex: =4
-
-    "'Banner (View Parcel Information Other Foodbank)' As rectangle":
-        Fill: |
-            =NeitherColor
-        Height: =60
-        Width: =640
-        Y: =60
-        ZIndex: =4
 
     "'Banner2 (View Parcel Information Other Foodbank)' As rectangle":
         Fill: =NeitherColor

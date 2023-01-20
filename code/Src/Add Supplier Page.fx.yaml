@@ -1,18 +1,18 @@
 "'Add Supplier Page' As screen":
 
+    "'Banner (Edit Parcel Information)_2' As rectangle":
+        Fill: =NeitherColor
+        Height: =80
+        Width: =640
+        Y: =40
+        ZIndex: =1
+
     "'Topbar Cmpnt_8' As 'Topbar Cmpnt'":
         ZIndex: =2
 
     "'Appbar Cmpnt_9' As 'Appbar Cmpnt'":
         Y: =1036
         ZIndex: =3
-
-    "'Banner (Edit Parcel Information)_2' As rectangle":
-        Fill: =NeitherColor
-        Height: =60
-        Width: =640
-        Y: =60
-        ZIndex: =6
 
     "'Complete_Icon  (Edit Parcel Information)_3' As icon.Check":
         Height: =45
@@ -21,7 +21,7 @@
         Width: =45
         X: =590
         Y: =68
-        ZIndex: =7
+        ZIndex: =4
 
     "'Cancel _Icon (Edit Parcel Information)_2' As icon.Cancel":
         Height: =45
@@ -30,7 +30,7 @@
         Width: =45
         X: =5
         Y: =68
-        ZIndex: =8
+        ZIndex: =5
 
     Form4 As form:
         DataSource: =Suppliers
@@ -38,7 +38,7 @@
         Height: =891
         Width: =640
         Y: =131
-        ZIndex: =9
+        ZIndex: =6
 
         SupplierPK_DataCard2 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
