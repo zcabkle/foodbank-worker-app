@@ -173,71 +173,85 @@
         Y: =67
         ZIndex: =5
 
-    HtmlText2_12 As htmlViewer:
-        Height: =89
-        HtmlText: |-
-            ="<div style='margin-left:5px; margin-top:5px; width:604px;height:70px; border-radius: 40px; background-color:rgba(54, 176, 75, 1); box-shadow: 0px 0px 0px 0px rgba(54, 176, 75, 0.5), inset 0px 20px 28px 0px rgba(54, 176, 75, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Width: =622
-        X: =8
-        Y: =155
-        ZIndex: =6
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =10
 
-    "'Add_Item_btn (Home)' As button":
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        Fill: =Color.Transparent
-        Height: =70
-        HoverBorderColor: =Self.BorderColor
-        HoverFill: =ColorFade(RGBA(52, 165, 71, 1), -20%)
-        OnSelect: =Navigate('Add Item Page');
-        PressedBorderColor: =RGBA(54, 176, 75, 1)
-        PressedColor: =RGBA(54, 176, 75, 1)
-        PressedFill: =RGBA(255, 255, 255, 1)
-        RadiusBottomLeft: =40
-        RadiusBottomRight: =40
-        RadiusTopLeft: =40
-        RadiusTopRight: =40
-        Size: =24
-        Text: ="Add New Item"
-        Width: =604
-        X: =14
-        Y: =160
-        ZIndex: =7
+        HtmlText2_12 As htmlViewer:
+            Height: =89
+            HtmlText: |-
+                ="<div style='margin-left:5px; margin-top:5px; width:604px;height:70px; border-radius: 40px; background-color:rgba(54, 176, 75, 1); box-shadow: 0px 0px 0px 0px rgba(54, 176, 75, 0.5), inset 0px 20px 28px 0px rgba(54, 176, 75, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Width: =622
+            X: =8
+            Y: =152
+            ZIndex: =6
 
-    HtmlText2_13 As htmlViewer:
-        Height: =85
-        HtmlText: |-
-            ="<div style='margin-left:5px; margin-top:5px; width:514px;height:70px; border-radius: 40px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset 0px 0px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Width: =529
-        X: =18
-        Y: =70
-        ZIndex: =8
+        "'Add_Item_btn (Home)' As button":
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =Color.Transparent
+            Height: =70
+            HoverBorderColor: =Self.BorderColor
+            HoverFill: =ColorFade(RGBA(52, 165, 71, 1), -20%)
+            OnSelect: =Navigate('Add Item Page');
+            PressedBorderColor: =RGBA(54, 176, 75, 1)
+            PressedColor: =RGBA(54, 176, 75, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =40
+            RadiusBottomRight: =40
+            RadiusTopLeft: =40
+            RadiusTopRight: =40
+            Size: =24
+            Text: ="Add New Item"
+            Width: =604
+            X: =14
+            Y: =157
+            ZIndex: =7
 
-    "'Search (Home)' As text":
-        Clear: =true
-        Color: =RGBA(0, 18, 107, 1)
-        Default: =""
-        Fill: =Color.Transparent
-        Height: =70
-        HintText: ="Search for an item"
-        HoverFill: =RGBA(215, 215, 215, 0.8)
-        PaddingLeft: =10
-        RadiusBottomLeft: =40
-        RadiusBottomRight: =40
-        RadiusTopLeft: =40
-        RadiusTopRight: =40
-        Size: =21
-        Width: =514
-        X: =21
-        Y: =75
-        ZIndex: =9
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =10
+
+        HtmlText2_13 As htmlViewer:
+            Height: =85
+            HtmlText: |-
+                ="<div style='margin-left:5px; margin-top:5px; width:514px;height:70px; border-radius: 40px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset 0px 0px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Width: =529
+            X: =18
+            Y: =70
+            ZIndex: =8
+
+        "'Search (Home)' As text":
+            Clear: =true
+            Color: =RGBA(0, 18, 107, 1)
+            Default: =""
+            Fill: =Color.Transparent
+            Height: =70
+            HintText: ="Search for an item"
+            HoverFill: =RGBA(215, 215, 215, 0.8)
+            PaddingLeft: =10
+            RadiusBottomLeft: =40
+            RadiusBottomRight: =40
+            RadiusTopLeft: =40
+            RadiusTopRight: =40
+            Size: =21
+            Width: =514
+            X: =21
+            Y: =75
+            ZIndex: =9
 

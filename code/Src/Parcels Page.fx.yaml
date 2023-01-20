@@ -1,23 +1,6 @@
 "'Parcels Page' As screen":
 
     "'Topbar (Parcels)' As 'Topbar Cmpnt'":
-
-    "'Search (Parcels)' As text":
-        Clear: =true
-        Color: =RGBA(116, 116, 116, 1)
-        Default: =""
-        Height: =70
-        HintText: ="Search for a parcel"
-        HoverFill: =RGBA(215, 215, 215, 0.8)
-        PaddingLeft: =10
-        RadiusBottomLeft: =40
-        RadiusBottomRight: =40
-        RadiusTopLeft: =40
-        RadiusTopRight: =40
-        Size: =21
-        Width: =514
-        X: =18
-        Y: =75
         ZIndex: =2
 
     "'Parcels_Gallery (Parcels)' As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
@@ -38,8 +21,8 @@
         TemplatePadding: =10
         TemplateSize: =218
         Visible: =Not('Empty Parcels (Parcels)'.Visible)
-        Y: =243
-        ZIndex: =3
+        Y: =230
+        ZIndex: =4
 
         HtmlText2_2 As htmlViewer:
             Height: =218
@@ -102,24 +85,6 @@
             Y: =53
             ZIndex: =5
 
-    "'Add_Parcel_btn (Parcels)' As button":
-        Fill: =RGBA(54, 176, 75, 1)
-        Height: =70
-        HoverFill: |-
-            =
-            ColorFade(RGBA(52, 165, 71, 1), -20%)
-        OnSelect: =Navigate('Add Parcel Page')
-        RadiusBottomLeft: =40
-        RadiusBottomRight: =40
-        RadiusTopLeft: =40
-        RadiusTopRight: =40
-        Size: =24
-        Text: ="Add New Parcel"
-        Width: =604
-        X: =18
-        Y: =160
-        ZIndex: =4
-
     "'Empty Parcels (Parcels)' As label":
         Align: =Align.Center
         Height: =200
@@ -132,24 +97,89 @@
         ZIndex: =5
 
     "'Filter_btn Cmpnt_2' As 'Filter_btn Cmpnt'":
-        X: =547
-        Y: =70
+        X: =535
+        Y: =67
         ZIndex: =6
 
     "'Appbar (Parcels)' As 'Appbar Cmpnt'":
         Y: =1036
-        ZIndex: =8
+        ZIndex: =7
 
-    HtmlText2_15 As htmlViewer:
-        Height: =85
-        HtmlText: |-
-            ="<div style='margin-left:5px; margin-top:5px; width:514px;height:70px; border-radius: 40px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset 0px 0px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Width: =529
-        X: =15
-        Y: =70
-        ZIndex: =9
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =10
+
+        HtmlText2_17 As htmlViewer:
+            Height: =89
+            HtmlText: |-
+                ="<div style='margin-left:5px; margin-top:5px; width:604px;height:70px; border-radius: 40px; background-color:rgba(54, 176, 75, 1); box-shadow: 0px 0px 0px 0px rgba(54, 176, 75, 0.5), inset 0px 20px 28px 0px rgba(54, 176, 75, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Width: =622
+            X: =8
+            Y: =152
+            ZIndex: =8
+
+        "'Add_Parcel_btn (Parcels)' As button":
+            BorderThickness: =0
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            HoverFill: |-
+                =
+                ColorFade(RGBA(52, 165, 71, 1), -20%)
+            OnSelect: =Navigate('Add Parcel Page')
+            RadiusBottomLeft: =40
+            RadiusBottomRight: =40
+            RadiusTopLeft: =40
+            RadiusTopRight: =40
+            Size: =24
+            Text: ="Add New Parcel"
+            Width: =604
+            X: =14
+            Y: =157
+            ZIndex: =9
+
+    Group4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =10
+
+        HtmlText2_15 As htmlViewer:
+            Height: =85
+            HtmlText: |-
+                ="<div style='margin-left:5px; margin-top:5px; width:514px;height:70px; border-radius: 40px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset 0px 0px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Width: =529
+            X: =18
+            Y: =70
+            ZIndex: =1
+
+        "'Search (Parcels)' As text":
+            Clear: =true
+            Color: =RGBA(116, 116, 116, 1)
+            Default: =""
+            Fill: =Color.Transparent
+            Height: =70
+            HintText: ="Search for a parcel"
+            HoverFill: =RGBA(215, 215, 215, 0.8)
+            PaddingLeft: =10
+            RadiusBottomLeft: =40
+            RadiusBottomRight: =40
+            RadiusTopLeft: =40
+            RadiusTopRight: =40
+            Size: =21
+            Width: =514
+            X: =21
+            Y: =75
+            ZIndex: =3
 
