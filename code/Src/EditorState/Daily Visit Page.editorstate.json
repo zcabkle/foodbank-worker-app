@@ -1259,7 +1259,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Italic",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Italic",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Underline",
         "Strikethrough",
         "PaddingTop",

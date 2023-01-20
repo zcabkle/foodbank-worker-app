@@ -46,24 +46,12 @@
             Y: =0
             ZIndex: =1
 
-            DataCardKey6 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.4
-                Wrap: =false
-                X: =30
-                Y: =10 + (DataCardValue6.Height / 2) - (Self.Height / 2)
-                ZIndex: =1
-
             DataCardValue6 As image:
                 DisplayMode: =Parent.DisplayMode
                 Height: =230
                 Image: =Parent.Default
                 Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey6.X + DataCardKey6.Width
-                Y: =10
+                X: =148
                 ZIndex: =2
 
         ItemCategory_DataCard3 As typedDataCard.comboBoxOptionSetSingleViewCard:
@@ -73,7 +61,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Stock],DataSourceInfo.DisplayName,"cr967_itemcategory")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =60
             Required: =false
             Update: =DataCardValue32.Selected
             Width: =640
@@ -82,14 +70,12 @@
             ZIndex: =1
 
             DataCardKey32 As label:
-                AutoHeight: =true
-                Height: =48
+                Height: =60
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10 + (DataCardValue32.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue32 As combobox:
@@ -97,7 +83,7 @@
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =60
                 IsSearchable: =false
                 Items: =Choices(ItemCategory)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -105,9 +91,8 @@
                 SearchItems: =[]
                 SelectMultiple: =false
                 Size: =21
-                Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey32.X + DataCardKey32.Width
-                Y: =10
+                Width: =270
+                X: =320
                 ZIndex: =2
 
             ErrorMessage22 As label:
@@ -153,14 +138,12 @@
             ZIndex: =1
 
             DataCardKey36 As label:
-                AutoHeight: =true
-                Height: =48
+                Height: =59
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10 + (DataCardValue36.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue36 As combobox:
@@ -168,7 +151,7 @@
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =60
                 IsSearchable: =false
                 Items: =Choices(StockLevel)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -176,9 +159,8 @@
                 SearchItems: =[]
                 SelectMultiple: =false
                 Size: =21
-                Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey36.X + DataCardKey36.Width
-                Y: =10
+                Width: =305
+                X: =322
                 ZIndex: =2
 
             ErrorMessage26 As label:
@@ -215,7 +197,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Stock],DataSourceInfo.DisplayName,"cr967_shareitemwith")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =60
             Required: =false
             Update: =DataCardValue33.Selected
             Width: =640
@@ -225,7 +207,7 @@
 
             DataCardKey33 As label:
                 AutoHeight: =true
-                Height: =48
+                Height: =60
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
@@ -239,7 +221,7 @@
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =60
                 IsSearchable: =false
                 Items: =Choices(ShareWith)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -247,8 +229,8 @@
                 SearchItems: =[]
                 SelectMultiple: =false
                 Size: =21
-                Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey33.X + DataCardKey33.Width
+                Width: =303
+                X: =320
                 Y: =10
                 ZIndex: =2
 
@@ -286,7 +268,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Stock],DataSourceInfo.DisplayName,"cr967_sharequantitywith")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =60
             Required: =false
             Update: =DataCardValue34.Selected
             Width: =640
@@ -295,14 +277,12 @@
             ZIndex: =1
 
             DataCardKey34 As label:
-                AutoHeight: =true
-                Height: =48
+                Height: =60
                 Size: =21
                 Text: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.4
+                Width: =263
                 Wrap: =false
                 X: =30
-                Y: =10 + (DataCardValue34.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue34 As combobox:
@@ -310,7 +290,7 @@
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =60
                 IsSearchable: =false
                 Items: =Choices(ShareWith)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -318,9 +298,8 @@
                 SearchItems: =[]
                 SelectMultiple: =false
                 Size: =21
-                Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey34.X + DataCardKey34.Width
-                Y: =10
+                Width: =300
+                X: =322
                 ZIndex: =2
 
             ErrorMessage24 As label:
@@ -357,7 +336,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Stock],DataSourceInfo.DisplayName,"cr967_sharestocklevelwith")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =60
             Required: =false
             Update: =DataCardValue35.Selected
             Width: =640
@@ -367,10 +346,10 @@
 
             DataCardKey35 As label:
                 AutoHeight: =true
-                Height: =48
+                Height: =60
                 Size: =21
                 Text: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.4
+                Width: =293
                 Wrap: =false
                 X: =30
                 Y: =10 + (DataCardValue35.Height / 2) - (Self.Height / 2)
@@ -381,7 +360,7 @@
                 DefaultSelectedItems: =[Parent.Default]
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =60
                 IsSearchable: =false
                 Items: =Choices(ShareWith)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -389,7 +368,7 @@
                 SearchItems: =[]
                 SelectMultiple: =false
                 Size: =21
-                Width: =(Parent.Width - 60) * 0.6
+                Width: =300
                 X: =DataCardKey35.X + DataCardKey35.Width
                 Y: =10
                 ZIndex: =2
@@ -443,20 +422,20 @@
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10 + (DataCardValue29.Height / 2) - (Self.Height / 2)
+                Y: =25
                 ZIndex: =1
 
             DataCardValue29 As label:
-                AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =53
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =21
                 Text: =Parent.Default
-                Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey29.X + DataCardKey29.Width
-                Y: =10
+                Width: =242
+                X: =318
+                Y: =25
                 ZIndex: =2
 
         Description_DataCard4 As typedDataCard.textualViewCard:
@@ -466,7 +445,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Stock],DataSourceInfo.DisplayName,"cr967_description")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =130
             Required: =false
             Width: =640
             X: =0
@@ -480,21 +459,22 @@
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
-                X: =30
-                Y: =10 + (DataCardValue30.Height / 2) - (Self.Height / 2)
+                X: =28
+                Y: =16
                 ZIndex: =1
 
             DataCardValue30 As label:
-                AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =130
+                Italic: =If(IsBlank(Parent.Default), true, false)
+                Overflow: =Overflow.Scroll
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =21
-                Text: =Parent.Default
-                Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey30.X + DataCardKey30.Width
-                Y: =10
+                Text: =If(IsBlank(Parent.Default), "No description given", Parent.Default)
+                Width: =310
+                X: =313
                 ZIndex: =2
 
         Quantity_DataCard4 As typedDataCard.textualViewCard:
@@ -504,7 +484,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Stock],DataSourceInfo.DisplayName,"cr967_quantity")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =81
             Required: =false
             Width: =640
             X: =0
@@ -518,21 +498,21 @@
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
-                X: =30
-                Y: =10 + (DataCardValue31.Height / 2) - (Self.Height / 2)
+                X: =28
+                Y: =32
                 ZIndex: =1
 
             DataCardValue31 As label:
-                AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
+                Height: =46
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =21
                 Text: =Parent.Default
-                Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey31.X + DataCardKey31.Width
-                Y: =10
+                Width: =253
+                X: =316
+                Y: =34
                 ZIndex: =2
 
     "'Item Name (View Stock Information)' As label":

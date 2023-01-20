@@ -35,9 +35,9 @@
     Form3 As form:
         DataSource: =Visitors
         DefaultMode: =FormMode.New
-        Height: =914
+        Height: =904
         Width: =640
-        Y: =118
+        Y: =126
         ZIndex: =6
 
         VisitorPK_DataCard2 As typedDataCard.textualViewCard:

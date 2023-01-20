@@ -114,7 +114,7 @@
             Visible: =ThisItem.StockLevel=StockLevel.Understocked || ThisItem.StockLevel=StockLevel.Overstocked
             Width: =158
             X: =169
-            Y: =143
+            Y: =149
             ZIndex: =9
 
         Group10 As group:
@@ -157,6 +157,8 @@
                     Patch(colBasket, LookUp(colBasket, ID = ThisItem.ItemPK), { Quantity: newQuantity });
                     
                     Notify("Item added to basket", NotificationType.Success);
+                PressedBorderColor: =RGBA(54, 176, 75, 1)
+                PressedColor: =RGBA(54, 176, 75, 1)
                 RadiusBottomLeft: =18
                 RadiusBottomRight: =18
                 RadiusTopLeft: =18

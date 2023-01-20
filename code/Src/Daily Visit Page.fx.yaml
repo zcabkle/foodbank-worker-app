@@ -49,7 +49,7 @@
             Text: |-
                 ="Visit by " & LookUp(Visitors, VisitorPK = Text(ThisItem.cr967_VisitorKey.VisitorPK)).Forename & " " & LookUp(Visitors, VisitorPK = Text(ThisItem.cr967_VisitorKey.VisitorPK)).Surname & " at " & Text(ThisItem.cr967_datetime, "hh:mm:ss")
             Underline: =true
-            Width: =331
+            Width: =563
             X: =27
             Y: =15
             ZIndex: =3
@@ -69,8 +69,9 @@
 
         Label17 As label:
             Color: =RGBA(0, 18, 107, 1)
-            FontWeight: =FontWeight.Semibold
+            FontWeight: =FontWeight.Bold
             Height: =115
+            Italic: =true
             OnSelect: =Select(Parent)
             Size: =15
             Text: |-
