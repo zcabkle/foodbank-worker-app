@@ -1,6 +1,14 @@
 "'Other Foodbank Parcels Page' As screen":
 
+    "'Banner (Other Foodbank Parcels)' As rectangle":
+        Fill: =NeitherColor
+        Height: =90
+        Width: =640
+        Y: =29
+        ZIndex: =2
+
     "'Topbar (Other Foodbank Parcels)' As 'Topbar Cmpnt'":
+        ZIndex: =3
 
     "'Other_Foodbank_Parcel_Gallery (Other Foodbank Parcels)' As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =827
@@ -13,7 +21,7 @@
         Width: =620
         X: =10
         Y: =214
-        ZIndex: =2
+        ZIndex: =4
 
         HtmlText2_11 As htmlViewer:
             Height: =232
@@ -100,13 +108,6 @@
             Y: =71
             ZIndex: =7
 
-    "'Banner (Other Foodbank Parcels)' As rectangle":
-        Fill: =NeitherColor
-        Height: =60
-        Width: =640
-        Y: =60
-        ZIndex: =3
-
     "'Viewing parcels at foodbank X (Other Foodbank Parcels)' As label":
         Align: =Align.Center
         Color: =RGBA(0, 18, 107, 1)
@@ -116,23 +117,6 @@
         Text: ="Viewing parcels at " & 'Other_Foodbanks_Gallery (Other Foodbanks)'.Selected.Name
         Width: =640
         Y: =60
-        ZIndex: =4
-
-    "'Search (Other Foodbank Parcels)' As text":
-        Color: =RGBA(116, 116, 116, 1)
-        Default: =""
-        Height: =70
-        HintText: ="Search for a parcel"
-        HoverFill: =RGBA(215, 215, 215, 0.8)
-        PaddingLeft: =10
-        RadiusBottomLeft: =40
-        RadiusBottomRight: =40
-        RadiusTopLeft: =40
-        RadiusTopRight: =40
-        Size: =21
-        Width: =514
-        X: =15
-        Y: =135
         ZIndex: =5
 
     "'Empty Parcels (Other Foodbank Parcels)' As label":
@@ -144,14 +128,52 @@
         Width: =453
         X: =93
         Y: =520
-        ZIndex: =6
+        ZIndex: =7
 
     "'Filter_btn Cmpnt_5' As 'Filter_btn Cmpnt'":
-        X: =550
-        Y: =132
-        ZIndex: =7
+        X: =535
+        Y: =127
+        ZIndex: =8
 
     "'Appbar (Other Foodbank Parcels)' As 'Appbar Cmpnt'":
         Y: =1036
         ZIndex: =9
+
+    Group9 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =10
+
+        HtmlText2_23 As htmlViewer:
+            Height: =85
+            HtmlText: |-
+                ="<div style='margin-left:5px; margin-top:5px; width:514px;height:70px; border-radius: 40px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset 0px 0px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Width: =529
+            X: =16
+            Y: =130
+            ZIndex: =1
+
+        "'Search (Other Foodbank Parcels)' As text":
+            Color: =RGBA(116, 116, 116, 1)
+            Default: =""
+            Fill: =Color.Transparent
+            Height: =70
+            HintText: ="Search for a parcel"
+            HoverFill: =RGBA(215, 215, 215, 0.8)
+            PaddingLeft: =10
+            RadiusBottomLeft: =40
+            RadiusBottomRight: =40
+            RadiusTopLeft: =40
+            RadiusTopRight: =40
+            Size: =21
+            Width: =514
+            X: =21
+            Y: =135
+            ZIndex: =6
 
