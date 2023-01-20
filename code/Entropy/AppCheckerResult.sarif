@@ -3164,36 +3164,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Other Foodbank Stock Page'.'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Other Foodbank Stock Page'.'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Other Foodbank Stock Page",
-                "type": "'Other Foodbank Stock Page'.'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Other Foodbank Stock Page'.'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.AccessibleLabel"
                 }
               ],
@@ -3224,19 +3194,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Other Foodbank Stock Page'.'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.Icon7_3.TabIndex"
+                  "fullyQualifiedName": "'Other Foodbank Stock Page'.'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Other Foodbank Stock Page'.'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.Icon7_3.TabIndex",
+                  "fullyQualifiedName": "'Other Foodbank Stock Page'.'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Other Foodbank Stock Page",
-                "type": "'Other Foodbank Stock Page'.'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.Icon7_3"
+                "type": "'Other Foodbank Stock Page'.'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'"
               }
             }
           ],
@@ -3278,6 +3248,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Other Foodbank Stock Page'.'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.Icon7_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Other Foodbank Stock Page'.'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.Icon7_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Other Foodbank Stock Page",
+                "type": "'Other Foodbank Stock Page'.'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.Icon7_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
         },
         {
           "locations": [

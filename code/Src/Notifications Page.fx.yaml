@@ -11,39 +11,18 @@
         Layout: =Layout.Vertical
         TemplateFill: =
         TemplatePadding: =10
-        TemplateSize: =166
+        TemplateSize: =198
         Visible: =Not(Label25.Visible)
-        Width: =630
-        X: =10
         Y: =159
         ZIndex: =1
 
-        HtmlText2_10 As htmlViewer:
-            Height: =166
+        HtmlText2_8 As htmlViewer:
+            Height: =201
             HtmlText: |-
-                ="<div style='margin:0px;width:599px;height:155px;background-color:#;box-shadow:0px 3px 3px 3px  #ccc; border-radius:20px'></div>"
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Width: =610
+                ="<div style='margin-left:5px; margin-top:0px; width:604px;height:180px; border-radius: 20px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+            OnSelect: =Select(Parent)
+            Width: =620
             ZIndex: =1
-
-        Button8_10 As button:
-            DisplayMode: =DisplayMode.View
-            Fill: =NeitherColor
-            Height: =155
-            HoverBorderColor: =
-            HoverFill: =
-            OnSelect: =
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Size: =24
-            Text: =""
-            Width: =599
-            ZIndex: =2
 
         Title3 As label:
             Height: =Self.Size * 1.8
@@ -57,7 +36,7 @@
             Width: =
             X: =
             Y: =44
-            ZIndex: =3
+            ZIndex: =2
 
         Subtitle2 As label:
             Height: =Self.Size * 1.8
@@ -71,7 +50,7 @@
             Width: =Title3.Width
             X: =Title3.X
             Y: =Title3.Y + Title3.Height + 4
-            ZIndex: =4
+            ZIndex: =3
 
         Label24 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -81,9 +60,9 @@
             Size: =20
             Text: =ThisItem.Message
             Width: =535
-            X: =7
-            Y: =3
-            ZIndex: =5
+            X: =19
+            Y: =12
+            ZIndex: =4
 
         Label26 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -91,9 +70,9 @@
             Size: =21
             Text: =ThisItem.DateTime
             Width: =560
-            X: =7
+            X: =19
             Y: =98
-            ZIndex: =6
+            ZIndex: =5
 
         Icon1 As icon.Trash:
             Height: =29
@@ -102,16 +81,16 @@
             Width: =29
             X: =546
             Y: =109
-            ZIndex: =7
+            ZIndex: =6
 
         Icon3 As icon.Information:
             Height: =47
             Icon: =Icon.Information
             OnSelect: =Select(Parent); Navigate('Notification Foodbank More Information Page');
             Width: =47
-            X: =528
+            X: =542
             Y: =44
-            ZIndex: =8
+            ZIndex: =7
 
         Button11_2 As button:
             BorderColor: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,UnderstockedColor,ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,OverstockedColor)
@@ -132,9 +111,9 @@
             Text: =If(ThisItem.NotificationMessageType = NotificationMessageType.ItemOverstocked, "OVERSTOCKED ITEM", ThisItem.NotificationMessageType = NotificationMessageType.ItemUnderstocked, "UNDERSTOCKED ITEM")
             Visible: =ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked || ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked
             Width: =210
-            X: =305
-            Y: =107
-            ZIndex: =9
+            X: =332
+            Y: =127
+            ZIndex: =8
 
     "'Appbar Cmpnt_5' As 'Appbar Cmpnt'":
         Y: =1036
