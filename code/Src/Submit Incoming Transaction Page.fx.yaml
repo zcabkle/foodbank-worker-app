@@ -164,7 +164,7 @@
         HtmlText2_18 As htmlViewer:
             Height: =89
             HtmlText: |-
-                ="<div style='margin-left:5px; margin-top:5px; width:604px;height:70px; border-radius: 40px; background-color:rgba(54, 176, 75, 1); box-shadow: 0px 0px 0px 0px rgba(54, 176, 75, 0.5), inset 0px 20px 28px 0px rgba(54, 176, 75, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+                ="<div style='margin-left:5px; margin-top:5px; width:604px;height:70px; border-radius: 40px; background-color:rgba(0, 134, 208, 1); box-shadow: 0px 0px 0px 0px rgba(0, 134, 208, 0.5), inset 0px 20px 28px 0px rgba(0, 134, 208, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -178,10 +178,10 @@
             BorderThickness: =0
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            HoverFill: |-
-                =
-                ColorFade(RGBA(52, 165, 71, 1), -20%)
+            HoverFill: =ColorFade(RGBA(0, 134, 208, 1), -20%)
             OnSelect: =Navigate('Add Supplier Page')
+            PressedBorderColor: =RGBA(0, 134, 208, 1)
+            PressedColor: =RGBA(0, 134, 208, 1)
             RadiusBottomLeft: =40
             RadiusBottomRight: =40
             RadiusTopLeft: =40

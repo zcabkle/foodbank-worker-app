@@ -24,6 +24,19 @@
             Width: =620
             ZIndex: =1
 
+        HtmlText2_27 As htmlViewer:
+            Height: =63
+            HtmlText: |-
+                ="<div style='margin-left:5px; margin-top:5px; width:212px;height:46px; border-radius: 40px; background-color:rgba(0, 18, 107, 1); box-shadow: 0px 0px 0px 0px rgba(0, 18, 107, 0.5), inset 0px 20px 28px 0px rgba(0, 18, 107, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Width: =235
+            X: =362
+            Y: =145
+            ZIndex: =2
+
         Label12_1 As label:
             Color: =RGBA(0, 18, 107, 1)
             FontWeight: =FontWeight.Semibold
@@ -33,7 +46,7 @@
             Text: =ThisItem.Forename & " " & ThisItem.Surname
             Width: =343
             X: =19
-            ZIndex: =2
+            ZIndex: =3
 
         Label13_1 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -44,7 +57,7 @@
             Width: =317
             X: =19
             Y: =51
-            ZIndex: =3
+            ZIndex: =4
 
         Label14_1 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -55,10 +68,11 @@
             Width: =331
             X: =19
             Y: =98
-            ZIndex: =4
+            ZIndex: =5
 
         Button5_1 As button:
-            Fill: =RGBA(0, 18, 107, 1)
+            BorderThickness: =0
+            Fill: =RGBA(0, 0, 0, 0)
             Height: =46
             OnSelect: |-
                 =Select(Parent);
@@ -69,9 +83,9 @@
             RadiusTopRight: =2010
             Text: ="Use This Visitor"
             Width: =212
-            X: =373
-            Y: =162
-            ZIndex: =5
+            X: =367
+            Y: =151
+            ZIndex: =6
 
         Label16_1 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -81,7 +95,7 @@
             Width: =392
             X: =19
             Y: =168
-            ZIndex: =6
+            ZIndex: =7
 
     "'Filter_btn Cmpnt_6' As 'Filter_btn Cmpnt'":
         X: =535
@@ -113,7 +127,7 @@
         HtmlText2_20 As htmlViewer:
             Height: =89
             HtmlText: |-
-                ="<div style='margin-left:5px; margin-top:5px; width:604px;height:70px; border-radius: 40px; background-color:rgba(54, 176, 75, 1); box-shadow: 0px 0px 0px 0px rgba(54, 176, 75, 0.5), inset 0px 20px 28px 0px rgba(54, 176, 75, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+                ="<div style='margin-left:5px; margin-top:5px; width:604px;height:70px; border-radius: 40px; background-color:rgba(0, 134, 208, 1); box-shadow: 0px 0px 0px 0px rgba(0, 134, 208, 0.5), inset 0px 20px 28px 0px rgba(0, 134, 208, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -130,10 +144,10 @@
             Fill: =Color.Transparent
             Height: =70
             HoverBorderColor: =Self.BorderColor
-            HoverFill: =ColorFade(RGBA(52, 165, 71, 1), -20%)
+            HoverFill: =ColorFade(RGBA(0, 134, 208, 1), -20%)
             OnSelect: =Navigate('Add Visitor Page');
-            PressedBorderColor: =RGBA(54, 176, 75, 1)
-            PressedColor: =RGBA(54, 176, 75, 1)
+            PressedBorderColor: =RGBA(0, 134, 208, 1)
+            PressedColor: =RGBA(0, 134, 208, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
             RadiusBottomLeft: =40
             RadiusBottomRight: =40
