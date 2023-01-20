@@ -8,77 +8,61 @@
         ZIndex: =3
 
     "'Basket_Gallery (Basket)' As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Height: =675
+        Height: =714
         Items: =colBasket
         Layout: =Layout.Vertical
         TemplateFill: =
         TemplatePadding: =10
-        TemplateSize: =184
+        TemplateSize: =196
         Visible: =Not('Your basket is empty (Basket)'.Visible)
-        Width: =620
-        X: =6
-        Y: =175
+        Y: =152
         ZIndex: =12
 
-        HtmlText2_5 As htmlViewer:
-            Height: =184
+        HtmlText2_3 As htmlViewer:
+            Height: =195
             HtmlText: |-
-                ="<div style='margin:0px;width:599px;height:170px;background-color:#;box-shadow:0 3px 3px 3px  #ccc; border-radius:20px'></div>"
+                ="<div style='margin-left:5px; margin-top:5px; width:604px;height:180px; border-radius: 20px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Width: =610
+            Width: =620
             ZIndex: =1
-
-        Button8_3 As button:
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.View
-            Fill: =NeitherColor
-            Height: =170
-            HoverBorderColor: =
-            HoverFill: =
-            OnSelect: =
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Size: =24
-            Text: =""
-            Width: =599
-            ZIndex: =2
 
         Image1 As image:
             BorderThickness: =1
             Height: =128
             Image: =If(IsBlank(LookUp(Stock, ItemPK = ThisItem.ID).Image), SampleImage, LookUp(Stock, ItemPK = ThisItem.ID).Image)
             OnSelect: =Select(Parent)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
             Width: =128
-            X: =36
-            Y: =21
-            ZIndex: =3
+            X: =39
+            Y: =33
+            ZIndex: =4
 
         Title2 As label:
             Color: =RGBA(0, 18, 107, 1)
-            Height: =Self.Size * 1.8
+            Height: =68
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
             Text: =ThisItem.Name
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - Image1.Width - 104
-            X: =178
-            Y: =14
-            ZIndex: =4
+            Width: =337
+            X: =194
+            Y: =18
+            ZIndex: =5
 
         Icon12 As icon.Trash:
             Icon: =Icon.Trash
             OnSelect: =Remove(colBasket, ThisItem)
             Width: =0
             X: =558
-            ZIndex: =5
+            ZIndex: =6
 
         Label8 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -88,9 +72,9 @@
             Text: |-
                 ="Quantity:"
             Width: =145
-            X: =202
-            Y: =68
-            ZIndex: =6
+            X: =232
+            Y: =86
+            ZIndex: =7
 
         Dropdown3 As dropdown:
             BorderThickness: =1.5
@@ -118,9 +102,9 @@
             SelectionFill: =varMenuSecondaryColor
             Size: =21
             Width: =116
-            X: =347
-            Y: =68
-            ZIndex: =7
+            X: =377
+            Y: =86
+            ZIndex: =8
 
         Icon13 As icon.Trash:
             Height: =51
@@ -129,9 +113,9 @@
                 =Remove(colBasket, ThisItem);
                 Notify("Item removed from basket.", NotificationType.Error);
             Width: =51
-            X: =522
-            Y: =73
-            ZIndex: =8
+            X: =538
+            Y: =72
+            ZIndex: =9
 
     "'Type_of_transaction_Radio (Basket)' As radio":
         Default: ="Incoming Transaction"
@@ -304,8 +288,8 @@
                     NotificationType.Error
                 )
             )
-        X: =553
-        Y: =82
+        X: =548
+        Y: =78
         ZIndex: =20
 
     ComboBox1 As combobox:
@@ -322,7 +306,7 @@
         SelectMultiple: =false
         Size: =21
         Width: =506
-        X: =32
-        Y: =79
+        X: =21
+        Y: =75
         ZIndex: =21
 

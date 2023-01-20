@@ -195,7 +195,7 @@
         "Name": "Button9",
         "Parent": "Appbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 769,
+        "PublishOrderIndex": 761,
         "Rules": [
           {
             "Category": "Data",
@@ -476,7 +476,7 @@
             "Name": "galleryTemplate3",
             "Parent": "Gallery",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 771,
+            "PublishOrderIndex": 763,
             "Rules": [
               {
                 "Category": "Design",
@@ -660,7 +660,7 @@
             "Name": "Appbar_Background_btn",
             "Parent": "Gallery",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 772,
+            "PublishOrderIndex": 764,
             "Rules": [
               {
                 "Category": "Data",
@@ -977,7 +977,7 @@
         "Name": "Gallery",
         "Parent": "Appbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 770,
+        "PublishOrderIndex": 762,
         "Rules": [
           {
             "Category": "Data",
@@ -1162,7 +1162,7 @@
             "Name": "galleryTemplate3_1",
             "Parent": "TransparentGallery",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 774,
+            "PublishOrderIndex": 766,
             "Rules": [
               {
                 "Category": "Design",
@@ -1388,7 +1388,7 @@
             "Name": "Appbar_Transparent_btn",
             "Parent": "TransparentGallery",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 775,
+            "PublishOrderIndex": 767,
             "Rules": [
               {
                 "Category": "Data",
@@ -1698,7 +1698,7 @@
         "Name": "TransparentGallery",
         "Parent": "Appbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 773,
+        "PublishOrderIndex": 765,
         "Rules": [
           {
             "Category": "Data",
@@ -1944,7 +1944,7 @@
         "Name": "HomeIcon",
         "Parent": "Appbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 776,
+        "PublishOrderIndex": 768,
         "Rules": [
           {
             "Category": "Design",
@@ -2177,7 +2177,7 @@
         "Name": "ParcelsIcon",
         "Parent": "Appbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 777,
+        "PublishOrderIndex": 769,
         "Rules": [
           {
             "Category": "Design",
@@ -2417,7 +2417,7 @@
         "Name": "FoodbanksIcon",
         "Parent": "Appbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 778,
+        "PublishOrderIndex": 770,
         "Rules": [
           {
             "Category": "Design",
@@ -2650,7 +2650,7 @@
         "Name": "BasketIcon",
         "Parent": "Appbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 779,
+        "PublishOrderIndex": 771,
         "Rules": [
           {
             "Category": "Design",
@@ -2883,7 +2883,7 @@
         "Name": "Records Icon",
         "Parent": "Appbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 780,
+        "PublishOrderIndex": 772,
         "Rules": [
           {
             "Category": "Design",
@@ -3223,7 +3223,7 @@
         "Name": "Button9_1",
         "Parent": "Appbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 781,
+        "PublishOrderIndex": 773,
         "Rules": [
           {
             "Category": "Data",

@@ -11,38 +11,20 @@
         Layout: =Layout.Vertical
         TemplateFill: =
         TemplatePadding: =10
-        TemplateSize: =206
-        Width: =620
-        X: =10
+        TemplateSize: =214
         Y: =115
         ZIndex: =2
 
-        HtmlText2_6 As htmlViewer:
-            Height: =210
+        HtmlText2_4 As htmlViewer:
+            Height: =217
             HtmlText: |-
-                ="<div style='margin:0px;width:604px;height:199px;background-color:#;box-shadow:0px 3px 3px 3px  #ccc; border-radius:20px'></div>"
+                ="<div style='margin-left:5px; margin-top:0px; width:604px;height:200px; border-radius: 20px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Width: =610
+            Width: =620
             ZIndex: =1
-
-        Button8_5 As button:
-            BorderThickness: =0
-            Fill: =NeitherColor
-            Height: =199
-            HoverBorderColor: =
-            HoverFill: =
-            OnSelect: =
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Size: =24
-            Text: =""
-            Width: =604
-            ZIndex: =2
 
         Subtitle5 As label:
             Height: =Self.Size * 1.8
@@ -56,7 +38,7 @@
             Width: =
             X: =
             Y: =
-            ZIndex: =3
+            ZIndex: =2
 
         Label11 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -70,7 +52,7 @@
             Width: =331
             X: =27
             Y: =15
-            ZIndex: =4
+            ZIndex: =3
 
         Label6 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -83,7 +65,7 @@
             Width: =135
             X: =27
             Y: =57
-            ZIndex: =5
+            ZIndex: =4
 
         Label17 As label:
             Color: =RGBA(0, 18, 107, 1)
@@ -97,7 +79,7 @@
             Width: =401
             X: =177
             Y: =72
-            ZIndex: =6
+            ZIndex: =5
 
     Label15 As label:
         Color: =RGBA(0, 18, 107, 1)

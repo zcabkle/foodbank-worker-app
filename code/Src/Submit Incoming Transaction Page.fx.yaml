@@ -1,22 +1,7 @@
 "'Submit Incoming Transaction Page' As screen":
 
     "'Topbar (Submit Incoming Transaction)' As 'Topbar Cmpnt'":
-
-    "'Search (Submit Incoming Transaction)' As text":
-        Color: =RGBA(116, 116, 116, 1)
-        Default: ="Search for a supplier"
-        Height: =70
-        HoverFill: =RGBA(215, 215, 215, 0.8)
-        PaddingLeft: =10
-        RadiusBottomLeft: =40
-        RadiusBottomRight: =40
-        RadiusTopLeft: =40
-        RadiusTopRight: =40
-        Size: =21
-        Width: =514
-        X: =15
-        Y: =75
-        ZIndex: =6
+        ZIndex: =3
 
     "'Supplier_Gallery (Submit Incoming Transaction)' As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =803
@@ -28,38 +13,19 @@
         TemplatePadding: =10
         TemplateSize: =260
         Visible: =Not(Label20.Visible)
-        Width: =620
-        X: =10
         Y: =233
-        ZIndex: =7
+        ZIndex: =5
 
-        HtmlText2_7 As htmlViewer:
-            Height: =265
+        HtmlText2_5 As htmlViewer:
+            Height: =260
             HtmlText: |-
-                ="<div style='margin:0px;width:599px;height:248px;background-color:#;box-shadow:0px 3px 3px 3px  #ccc; border-radius:20px'></div>"
+                ="<div style='margin-left:5px; margin-top:0px; width:604px;height:250px; border-radius: 20px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Width: =610
+            Width: =620
             ZIndex: =1
-
-        Button8_8 As button:
-            BorderThickness: =0
-            DisplayMode: =DisplayMode.View
-            Fill: =NeitherColor
-            Height: =248
-            HoverBorderColor: =
-            HoverFill: =
-            OnSelect: =
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Size: =24
-            Text: =""
-            Width: =599
-            ZIndex: =2
 
         Subtitle3 As label:
             Height: =Self.Size * 1.8
@@ -73,36 +39,36 @@
             Width: =
             X: =
             Y: =
-            ZIndex: =3
+            ZIndex: =2
 
         Label12 As label:
             Height: =70
             OnSelect: =Select(Parent)
             Size: =21
             Text: =ThisItem.Forename & " " & ThisItem.Surname
-            Width: =343
+            Width: =581
             X: =19
-            ZIndex: =4
+            ZIndex: =3
 
         Label13 As label:
             Height: =70
             OnSelect: =Select(Parent)
             Size: =21
             Text: =ThisItem.Address
-            Width: =317
+            Width: =567
             X: =19
             Y: =60
-            ZIndex: =5
+            ZIndex: =4
 
         Label14 As label:
             Height: =70
             OnSelect: =Select(Parent)
             Size: =21
             Text: =ThisItem.Email
-            Width: =331
+            Width: =567
             X: =19
             Y: =116
-            ZIndex: =6
+            ZIndex: =5
 
         Button5 As button:
             Fill: =RGBA(0, 18, 107, 1)
@@ -151,7 +117,7 @@
             Width: =212
             X: =374
             Y: =186
-            ZIndex: =7
+            ZIndex: =6
 
         Label16 As label:
             Height: =70
@@ -161,16 +127,16 @@
             Width: =392
             X: =19
             Y: =174
-            ZIndex: =8
+            ZIndex: =7
 
     "'Appbar (Submit Incoming Transaction)' As 'Appbar Cmpnt'":
         Y: =1036
-        ZIndex: =8
+        ZIndex: =6
 
     "'Filter_btn Cmpnt_7' As 'Filter_btn Cmpnt'":
-        X: =550
-        Y: =72
-        ZIndex: =10
+        X: =535
+        Y: =67
+        ZIndex: =7
 
     Label20 As label:
         Height: =58
@@ -181,28 +147,81 @@
         Width: =255
         X: =192
         Y: =574
-        ZIndex: =11
+        ZIndex: =8
 
-    "'Add_Item_btn (Home)_1' As button":
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        Fill: =RGBA(54, 176, 75, 1)
-        Height: =70
-        HoverBorderColor: =Self.BorderColor
-        HoverFill: =ColorFade(RGBA(52, 165, 71, 1), -20%)
-        OnSelect: =Navigate('Add Supplier Page');
-        PressedBorderColor: =RGBA(54, 176, 75, 1)
-        PressedColor: =RGBA(54, 176, 75, 1)
-        PressedFill: =RGBA(255, 255, 255, 1)
-        RadiusBottomLeft: =40
-        RadiusBottomRight: =40
-        RadiusTopLeft: =40
-        RadiusTopRight: =40
-        Size: =24
-        Text: ="Add New Supplier"
-        Width: =610
-        X: =15
-        Y: =160
-        ZIndex: =12
+    Group7 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =10
+
+        HtmlText2_18 As htmlViewer:
+            Height: =89
+            HtmlText: |-
+                ="<div style='margin-left:5px; margin-top:5px; width:604px;height:70px; border-radius: 40px; background-color:rgba(54, 176, 75, 1); box-shadow: 0px 0px 0px 0px rgba(54, 176, 75, 0.5), inset 0px 20px 28px 0px rgba(54, 176, 75, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Width: =622
+            X: =8
+            Y: =152
+            ZIndex: =2
+
+        "'Add_Parcel_btn (Parcels)_1' As button":
+            BorderThickness: =0
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            HoverFill: |-
+                =
+                ColorFade(RGBA(52, 165, 71, 1), -20%)
+            OnSelect: =Navigate('Add Supplier Page')
+            RadiusBottomLeft: =40
+            RadiusBottomRight: =40
+            RadiusTopLeft: =40
+            RadiusTopRight: =40
+            Size: =24
+            Text: ="Add New Supplier"
+            Width: =604
+            X: =14
+            Y: =157
+            ZIndex: =9
+
+    Group8 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =10
+
+        HtmlText2_19 As htmlViewer:
+            Height: =85
+            HtmlText: |-
+                ="<div style='margin-left:5px; margin-top:5px; width:514px;height:70px; border-radius: 40px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset 0px 0px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Width: =529
+            X: =18
+            Y: =70
+            ZIndex: =1
+
+        "'Search (Submit Incoming Transaction)' As text":
+            Color: =RGBA(116, 116, 116, 1)
+            Default: ="Search for a supplier"
+            Fill: =Color.Transparent
+            Height: =70
+            HoverFill: =RGBA(215, 215, 215, 0.8)
+            PaddingLeft: =10
+            RadiusBottomLeft: =40
+            RadiusBottomRight: =40
+            RadiusTopLeft: =40
+            RadiusTopRight: =40
+            Size: =21
+            Width: =514
+            X: =21
+            Y: =75
+            ZIndex: =4
 
