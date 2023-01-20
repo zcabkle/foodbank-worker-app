@@ -127,7 +127,7 @@
             HtmlText2_24 As htmlViewer:
                 Height: =46
                 HtmlText: |-
-                    ="<div style='margin-left:5px; margin-top:5px; width:155px;height:35px; border-radius: 40px; background-color:rgba(54, 176, 75, 1); box-shadow: 0px 0px 0px 0px rgba(54, 176, 75, 0.5), inset 0px 40px 28px 0px rgba(54, 176, 75, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+                    ="<div style='margin-left:5px; margin-top:5px; width:155px;height:35px; border-radius: 40px; background-color:rgba(0, 134, 208, 1); box-shadow: 0px 0px 0px 0px rgba(0, 134, 208, 0.5), inset 0px 40px 28px 0px rgba(0, 134, 208, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
@@ -141,7 +141,7 @@
                 BorderThickness: =0
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =35
-                HoverFill: =ColorFade(RGBA(52, 165, 71, 1), -20%)
+                HoverFill: =ColorFade(RGBA(0, 134, 208, 1), -20%)
                 OnSelect: |-
                     =Set(tempCurrentQuantity, 0);
                     Set(newQuantity, 0);
@@ -157,8 +157,8 @@
                     Patch(colBasket, LookUp(colBasket, ID = ThisItem.ItemPK), { Quantity: newQuantity });
                     
                     Notify("Item added to basket", NotificationType.Success);
-                PressedBorderColor: =RGBA(54, 176, 75, 1)
-                PressedColor: =RGBA(54, 176, 75, 1)
+                PressedBorderColor: =RGBA(0, 134, 208, 1)
+                PressedColor: =RGBA(0, 134, 208, 1)
                 RadiusBottomLeft: =18
                 RadiusBottomRight: =18
                 RadiusTopLeft: =18
@@ -206,7 +206,7 @@
         HtmlText2_12 As htmlViewer:
             Height: =89
             HtmlText: |-
-                ="<div style='margin-left:5px; margin-top:5px; width:604px;height:70px; border-radius: 40px; background-color:rgba(54, 176, 75, 1); box-shadow: 0px 0px 0px 0px rgba(54, 176, 75, 0.5), inset 0px 20px 28px 0px rgba(54, 176, 75, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+                ="<div style='margin-left:5px; margin-top:5px; width:604px;height:70px; border-radius: 40px; background-color:rgba(0, 134, 208, 1); box-shadow: 0px 0px 0px 0px rgba(0, 134, 208, 0.5), inset 0px 20px 28px 0px rgba(0, 134, 208, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -223,10 +223,10 @@
             Fill: =Color.Transparent
             Height: =70
             HoverBorderColor: =Self.BorderColor
-            HoverFill: =ColorFade(RGBA(52, 165, 71, 1), -20%)
+            HoverFill: =ColorFade(RGBA(0, 134, 208, 1), -20%)
             OnSelect: =Navigate('Add Item Page');
-            PressedBorderColor: =RGBA(54, 176, 75, 1)
-            PressedColor: =RGBA(54, 176, 75, 1)
+            PressedBorderColor: =RGBA(0, 134, 208, 1)
+            PressedColor: =RGBA(0, 134, 208, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
             RadiusBottomLeft: =40
             RadiusBottomRight: =40

@@ -152,7 +152,7 @@
         ZIndex: =8
 
     Icon2 As icon.Add:
-        Color: =RGBA(54, 176, 75, 1)
+        Color: =RGBA(0, 134, 208, 1)
         Icon: =Icon.Add
         OnSelect: |-
             =Set(

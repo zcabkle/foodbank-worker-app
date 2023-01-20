@@ -129,7 +129,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Stock],DataSourceInfo.DisplayName,"cr967_stocklevel")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =70
             Required: =false
             Update: =DataCardValue36.Selected
             Width: =640
@@ -213,7 +213,7 @@
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10 + (DataCardValue33.Height / 2) - (Self.Height / 2)
+                Y: =10
                 ZIndex: =1
 
             DataCardValue33 As combobox:
@@ -231,7 +231,6 @@
                 Size: =21
                 Width: =303
                 X: =320
-                Y: =10
                 ZIndex: =2
 
             ErrorMessage23 As label:
@@ -352,7 +351,7 @@
                 Width: =293
                 Wrap: =false
                 X: =30
-                Y: =10 + (DataCardValue35.Height / 2) - (Self.Height / 2)
+                Y: =10
                 ZIndex: =1
 
             DataCardValue35 As combobox:
@@ -370,7 +369,6 @@
                 Size: =21
                 Width: =300
                 X: =DataCardKey35.X + DataCardKey35.Width
-                Y: =10
                 ZIndex: =2
 
             ErrorMessage25 As label:
@@ -464,7 +462,9 @@
                 ZIndex: =1
 
             DataCardValue30 As label:
+                BorderThickness: =10
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =10
                 Height: =130
                 Italic: =If(IsBlank(Parent.Default), true, false)
                 Overflow: =Overflow.Scroll
@@ -473,8 +473,8 @@
                 PaddingTop: =0
                 Size: =21
                 Text: =If(IsBlank(Parent.Default), "No description given", Parent.Default)
-                Width: =310
-                X: =313
+                Width: =300
+                X: =316
                 ZIndex: =2
 
         Quantity_DataCard4 As typedDataCard.textualViewCard:
@@ -512,7 +512,7 @@
                 Text: =Parent.Default
                 Width: =253
                 X: =316
-                Y: =34
+                Y: =35
                 ZIndex: =2
 
     "'Item Name (View Stock Information)' As label":
@@ -546,4 +546,10 @@
         X: =583
         Y: =68
         ZIndex: =7
+
+    Rectangle2 As rectangle:
+        Height: =1
+        Width: =640
+        Y: =620
+        ZIndex: =8
 

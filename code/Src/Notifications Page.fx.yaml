@@ -17,7 +17,7 @@
         Height: =891
         Items: |-
             =Search(
-                Filter(Notifications, ToFoodbankKey.FoodbankPK = SelectedFoodbank),
+                SortByColumns(Filter(Notifications, ToFoodbankKey.FoodbankPK = SelectedFoodbank), "cr967_datetime", Descending),
                 'Search (Home)_1'.Text,
                 "cr967_message"
             )

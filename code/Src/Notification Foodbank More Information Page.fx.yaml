@@ -1,26 +1,36 @@
 "'Notification Foodbank More Information Page' As screen":
 
-    "'Banner (View Stock Information)_1' As rectangle":
-        Fill: =If(Gallery3.Selected.NotificationMessageType = NotificationMessageType.ItemUnderstocked, UnderstockedColor, OverstockedColor)
-        Height: =175
-        Width: =640
-        Y: =37
-        ZIndex: =1
+    Button10 As button:
+        BorderThickness: =0
+        DisabledFill: =If(Gallery3.Selected.NotificationMessageType = NotificationMessageType.ItemOverstocked, RGBA(54, 176, 75, 0.2), RGBA(255, 0, 0, 0.25))
+        DisplayMode: =DisplayMode.Disabled
+        Fill: =If(Gallery3.Selected.NotificationMessageType = NotificationMessageType.ItemOverstocked, RGBA(54, 176, 75, 0.2), RGBA(255, 0, 0, 0.25))
+        Height: =177
+        RadiusBottomLeft: =40
+        RadiusBottomRight: =40
+        RadiusTopLeft: =40
+        RadiusTopRight: =40
+        Size: =24
+        Text: =""
+        Width: =610
+        X: =15
+        Y: =80
+        ZIndex: =2
 
     "'Appbar Cmpnt_6' As 'Appbar Cmpnt'":
         Y: =1036
-        ZIndex: =2
+        ZIndex: =3
 
     "'Topbar Cmpnt_6' As 'Topbar Cmpnt'":
-        ZIndex: =3
+        ZIndex: =4
 
     FormViewer3 As formViewer:
         DataSource: =Foodbanks
         Height: =560
         Item: =Gallery3.Selected.FromFoodbankKey
         Width: =640
-        Y: =224
-        ZIndex: =4
+        Y: =269
+        ZIndex: =5
 
         Name_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
@@ -125,10 +135,10 @@
 
             DataCardValue80 As htmlViewer:
                 AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =45
-                HtmlText: |-
-                    ="<a href='mailto:" & Parent.Default & "'>" & Parent.Default & "</a>"
+                HtmlText: =Parent.Default
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
@@ -291,12 +301,12 @@
                 ZIndex: =2
 
     Label27 As label:
-        Color: =RGBA(0, 18, 107, 1)
-        Height: =153
+        Color: =If(Gallery3.Selected.NotificationMessageType = NotificationMessageType.ItemOverstocked, OverstockedColor, UnderstockedColor)
+        Height: =161
         Size: =21
         Text: =Gallery3.Selected.Message & ", contact them by telephone or email to help them out!"
-        Width: =608
-        X: =15
-        Y: =60
-        ZIndex: =5
+        Width: =584
+        X: =29
+        Y: =88
+        ZIndex: =6
 

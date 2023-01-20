@@ -6163,19 +6163,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Notification Foodbank More Information Page'.'Banner (View Stock Information)_1'.Fill"
+                  "fullyQualifiedName": "'Notification Foodbank More Information Page'.Button10.Fill"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Notification Foodbank More Information Page'.'Banner (View Stock Information)_1'.Fill",
+                  "fullyQualifiedName": "'Notification Foodbank More Information Page'.Button10.Fill",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Fill",
                 "module": "Notification Foodbank More Information Page",
-                "type": "'Notification Foodbank More Information Page'.'Banner (View Stock Information)_1'"
+                "type": "'Notification Foodbank More Information Page'.Button10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Notification Foodbank More Information Page'.Button10.DisabledFill"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Notification Foodbank More Information Page'.Button10.DisabledFill",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DisabledFill",
+                "module": "Notification Foodbank More Information Page",
+                "type": "'Notification Foodbank More Information Page'.Button10"
               }
             }
           ],
@@ -6204,6 +6234,36 @@
               },
               "properties": {
                 "member": "Text",
+                "module": "Notification Foodbank More Information Page",
+                "type": "'Notification Foodbank More Information Page'.Label27"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Notification Foodbank More Information Page'.Label27.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Notification Foodbank More Information Page'.Label27.Color",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Color",
                 "module": "Notification Foodbank More Information Page",
                 "type": "'Notification Foodbank More Information Page'.Label27"
               }
