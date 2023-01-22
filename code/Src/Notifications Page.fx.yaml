@@ -110,7 +110,7 @@
             BorderThickness: =0
             Color: =
             DisabledBorderColor: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,varBoldUnderstockedColoredColor,ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,varBoldOverstockedColor)
-            DisabledColor: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,varUnderstockedColor,ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,varBoldOverstockedColor)
+            DisabledColor: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,varBoldUnderstockedColor,ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,varBoldOverstockedColor)
             DisabledFill: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,RGBA(255, 0, 0, 0.25),ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,RGBA(54, 176, 75, 0.2))
             DisplayMode: =DisplayMode.Disabled
             Fill: =RGBA(255, 161, 161, 1)
