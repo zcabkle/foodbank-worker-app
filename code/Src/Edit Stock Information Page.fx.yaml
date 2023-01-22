@@ -111,7 +111,7 @@
             DataCardKey41 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -157,7 +157,7 @@
             StarVisible30 As label:
                 Align: =Align.Center
                 Height: =DataCardKey41.Height
-                Size: =21
+                Size: =18
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
@@ -183,7 +183,7 @@
             DataCardKey45 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -229,7 +229,7 @@
             StarVisible34 As label:
                 Align: =Align.Center
                 Height: =DataCardKey45.Height
-                Size: =21
+                Size: =18
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
@@ -255,7 +255,7 @@
             DataCardKey42 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -301,7 +301,7 @@
             StarVisible31 As label:
                 Align: =Align.Center
                 Height: =DataCardKey42.Height
-                Size: =21
+                Size: =18
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
@@ -327,7 +327,7 @@
             DataCardKey43 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -373,7 +373,7 @@
             StarVisible32 As label:
                 Align: =Align.Center
                 Height: =DataCardKey43.Height
-                Size: =21
+                Size: =18
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
@@ -398,10 +398,10 @@
 
             DataCardKey44 As label:
                 AutoHeight: =true
-                Height: =48
-                Size: =21
+                Height: =43
+                Size: =18
                 Text: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.4
+                Width: =249
                 Wrap: =false
                 X: =30
                 Y: =10 + (DataCardValue44.Height / 2) - (Self.Height / 2)
@@ -445,7 +445,7 @@
             StarVisible33 As label:
                 Align: =Align.Center
                 Height: =DataCardKey44.Height
-                Size: =21
+                Size: =18
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
@@ -583,7 +583,7 @@
             DataCardKey38 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -655,7 +655,7 @@
             DataCardKey39 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -727,7 +727,7 @@
             DataCardKey40 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -773,7 +773,7 @@
             StarVisible29 As label:
                 Align: =Align.Center
                 Height: =DataCardKey40.Height
-                Size: =21
+                Size: =18
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
