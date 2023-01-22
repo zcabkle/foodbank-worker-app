@@ -51,29 +51,29 @@
         Remove(colItemsChart, LookUp(colItemsChart, ShortDate = ""));
 
     HtmlText2_11 As htmlViewer:
-        Height: =480
+        Height: =470
         HtmlText: |-
-            ="<div style='width:620px;height:470px; border-radius: 20px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+            ="<div style='width:620px;height:465px; border-radius: 20px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
         Width: =625
-        X: =7
-        Y: =549
+        X: =9
+        Y: =547
         ZIndex: =1
 
     HtmlText2_10 As htmlViewer:
-        Height: =480
+        Height: =470
         HtmlText: |-
-            ="<div style='width:620px;height:470px; border-radius: 20px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+            ="<div style='width:620px;height:465px; border-radius: 20px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
         Width: =625
-        X: =7
-        Y: =69
+        X: =9
+        Y: =68
         ZIndex: =2
 
     "'Appbar Cmpnt_8' As 'Appbar Cmpnt'":
