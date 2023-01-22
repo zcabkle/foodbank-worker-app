@@ -8,7 +8,7 @@
                 'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Neither,
             	NeitherColor,
                 'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Overstocked,
-            	varOverstockedColor,
+            	varBoldOverstockedColor,
             	RGBA(0, 0, 0, 0)
             )
         Height: =94

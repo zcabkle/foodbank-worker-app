@@ -95,11 +95,11 @@
             ZIndex: =8
 
         Button11 As button:
-            BorderColor: =If(ThisItem.StockLevel=StockLevel.Understocked,varUnderstockedColor,ThisItem.StockLevel=StockLevel.Neither,varNeitherColor,ThisItem.StockLevel=StockLevel.Overstocked,varOverstockedColor,RGBA(0,0,0,0))
+            BorderColor: =If(ThisItem.StockLevel=StockLevel.Understocked,varUnderstockedColor,ThisItem.StockLevel=StockLevel.Neither,varNeitherColor,ThisItem.StockLevel=StockLevel.Overstocked,varBoldOverstockedColor,RGBA(0,0,0,0))
             BorderThickness: =0
-            Color: =If(ThisItem.StockLevel=StockLevel.Understocked,varUnderstockedColor,ThisItem.StockLevel=StockLevel.Neither,varNeitherColor,ThisItem.StockLevel=StockLevel.Overstocked,varOverstockedColor,RGBA(0,0,0,0))
-            DisabledBorderColor: =If(ThisItem.StockLevel=StockLevel.Understocked,varUnderstockedColor,ThisItem.StockLevel=StockLevel.Neither,varNeitherColor,ThisItem.StockLevel=StockLevel.Overstocked,varOverstockedColor,RGBA(0,0,0,0))
-            DisabledColor: =If(ThisItem.StockLevel=StockLevel.Understocked,varUnderstockedColor,ThisItem.StockLevel=StockLevel.Neither,varNeitherColor,ThisItem.StockLevel=StockLevel.Overstocked,varOverstockedColor,RGBA(0,0,0,0))
+            Color: =If(ThisItem.StockLevel=StockLevel.Understocked,varUnderstockedColor,ThisItem.StockLevel=StockLevel.Neither,varNeitherColor,ThisItem.StockLevel=StockLevel.Overstocked,varBoldOverstockedColor,RGBA(0,0,0,0))
+            DisabledBorderColor: =If(ThisItem.StockLevel=StockLevel.Understocked,varUnderstockedColor,ThisItem.StockLevel=StockLevel.Neither,varNeitherColor,ThisItem.StockLevel=StockLevel.Overstocked,varBoldOverstockedColor,RGBA(0,0,0,0))
+            DisabledColor: =If(ThisItem.StockLevel=StockLevel.Understocked,varUnderstockedColor,ThisItem.StockLevel=StockLevel.Neither,varNeitherColor,ThisItem.StockLevel=StockLevel.Overstocked,varBoldOverstockedColor,RGBA(0,0,0,0))
             DisabledFill: =If(ThisItem.StockLevel=StockLevel.Understocked,RGBA(255, 0, 0, 0.25),ThisItem.StockLevel=StockLevel.Overstocked,RGBA(54, 176, 75, 0.2))
             DisplayMode: =DisplayMode.Disabled
             Fill: =RGBA(255, 161, 161, 1)

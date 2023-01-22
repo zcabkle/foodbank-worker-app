@@ -103,10 +103,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 310,
+                  "charLength": 314,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "If(\r\n    'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Understocked,\r\n\tUnderstockedColor,\r\n    'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Neither,\r\n\tNeitherColor,\r\n    'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Overstocked,\r\n\tvarOverstockedColor,\r\n\tRGBA(0, 0, 0, 0)\r\n)"
+                    "text": "If(\r\n    'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Understocked,\r\n\tUnderstockedColor,\r\n    'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Neither,\r\n\tNeitherColor,\r\n    'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Overstocked,\r\n\tvarBoldOverstockedColor,\r\n\tRGBA(0, 0, 0, 0)\r\n)"
                   }
                 }
               },
@@ -503,10 +503,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 310,
+                  "charLength": 314,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "If(\r\n    'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Understocked,\r\n\tUnderstockedColor,\r\n    'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Neither,\r\n\tNeitherColor,\r\n    'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Overstocked,\r\n\tvarOverstockedColor,\r\n\tRGBA(0, 0, 0, 0)\r\n)"
+                    "text": "If(\r\n    'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Understocked,\r\n\tUnderstockedColor,\r\n    'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Neither,\r\n\tNeitherColor,\r\n    'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Overstocked,\r\n\tvarBoldOverstockedColor,\r\n\tRGBA(0, 0, 0, 0)\r\n)"
                   }
                 }
               },
