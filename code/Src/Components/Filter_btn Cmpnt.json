@@ -45,7 +45,7 @@
         "Name": "HtmlText1",
         "Parent": "Filter_btn Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 804,
+        "PublishOrderIndex": 811,
         "Rules": [
           {
             "Category": "Data",
@@ -297,7 +297,7 @@
         "Name": "Filter_btn (Home)_1",
         "Parent": "Filter_btn Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 805,
+        "PublishOrderIndex": 812,
         "Rules": [
           {
             "Category": "Data",
@@ -609,7 +609,7 @@
         "Name": "Filter_Icon (Home)_1",
         "Parent": "Filter_btn Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 806,
+        "PublishOrderIndex": 813,
         "Rules": [
           {
             "Category": "Design",
