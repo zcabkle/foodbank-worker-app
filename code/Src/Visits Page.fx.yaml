@@ -21,7 +21,7 @@
             GroupBy(
                 AddColumns(
                     colVisitsTable,
-                    "YourDate",
+                    "ShortDate",
                     DateValue(
                         Text(
                             cr967_datetime,
@@ -29,7 +29,7 @@
                         )
                     )
                 ),
-                "YourDate",
+                "ShortDate",
                 "DateGroup"
             )
         );
@@ -49,7 +49,7 @@
                 colDisplayedVisits,
                 Defaults(colDisplayedVisits),
                 {
-                    Date: record.YourDate,
+                    Date: record.ShortDate,
                     Person: Sum(
                         record.DateGroup,
                         cr967_person
