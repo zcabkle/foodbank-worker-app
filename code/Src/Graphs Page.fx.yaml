@@ -92,33 +92,37 @@
 
         Title6 As label:
             Align: =Align.Center
+            Color: =RGBA(0, 18, 107, 1)
             FontWeight: =FontWeight.Semibold
-            Height: =25
+            Height: =26
+            Size: =15
             Text: ="Visits at " & LookUp(Foodbanks, FoodbankPK = SelectedFoodbank).Name
             Width: =611
             X: =14
-            Y: =76
+            Y: =79
             ZIndex: =3
 
         LineChart1 As lineChart:
             Font: =Font.'Open Sans'
-            Height: =387
+            Height: =396
+            ItemColorSet: =[RGBA(0, 18, 107, 1),RGBA(0, 134, 208, 1), RGBA(228, 120, 255, 1), RGBA(249, 105, 14, 1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
             Items: =colDisplayedVisits
             NumberOfSeries: =4
             Size: =13
             Width: =611
             X: =14
-            Y: =90
+            Y: =79
             ZIndex: =4
 
         Legend2 As legend:
-            Height: =52
+            Color: =RGBA(0, 18, 107, 1)
+            Height: =53
             ItemColorSet: =LineChart1.ItemColorSet
             Items: =LineChart1.SeriesLabels
             Size: =16
             Width: =587
             X: =38
-            Y: =477
+            Y: =475
             ZIndex: =5
 
     CompositeLineChart3 As group:
@@ -130,32 +134,36 @@
 
         Title9 As label:
             Align: =Align.Center
+            Color: =RGBA(0, 18, 107, 1)
             FontWeight: =FontWeight.Semibold
-            Height: =21
+            Height: =22
+            Size: =15
             Text: ="Items In - Items Out at " & LookUp(Foodbanks, FoodbankPK = SelectedFoodbank).Name
             Width: =603
             X: =22
-            Y: =570
+            Y: =572
             ZIndex: =8
 
         LineChart3 As lineChart:
             Font: =Font.'Open Sans'
-            Height: =372
+            Height: =384
+            ItemColorSet: =[RGBA(0, 18, 107, 1),RGBA(228, 120, 255, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
             Items: =colItemsChart
             NumberOfSeries: =2
             Size: =13
             Width: =603
             X: =22
-            Y: =591
+            Y: =576
             ZIndex: =9
 
         Legend5 As legend:
-            Height: =46
+            Color: =RGBA(0, 18, 107, 1)
+            Height: =48
             ItemColorSet: =LineChart3.ItemColorSet
             Items: =LineChart3.SeriesLabels
             Size: =16
             Width: =571
             X: =46
-            Y: =963
+            Y: =960
             ZIndex: =10
 
