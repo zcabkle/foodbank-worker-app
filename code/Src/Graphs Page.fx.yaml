@@ -60,7 +60,7 @@
         Title6 As label:
             Align: =Align.Center
             FontWeight: =FontWeight.Semibold
-            Height: =26
+            Height: =25
             Text: ="Visits at " & LookUp(Foodbanks, FoodbankPK = SelectedFoodbank).Name
             Width: =611
             X: =14
@@ -69,23 +69,23 @@
 
         LineChart1 As lineChart:
             Font: =Font.'Open Sans'
-            Height: =418
+            Height: =398
             Items: =colDisplayedVisits
             NumberOfSeries: =4
-            Size: =15
+            Size: =13
             Width: =611
             X: =14
-            Y: =91
+            Y: =90
             ZIndex: =19
 
         Legend2 As legend:
-            Height: =55
+            Height: =52
             ItemColorSet: =LineChart1.ItemColorSet
             Items: =LineChart1.SeriesLabels
             Size: =16
             Width: =550
             X: =37
-            Y: =518
+            Y: =497
             ZIndex: =20
 
     "'Appbar Cmpnt_8' As 'Appbar Cmpnt'":
@@ -166,28 +166,29 @@
             FontWeight: =FontWeight.Semibold
             Height: =21
             Text: ="Items In - Items Out at " & LookUp(Foodbanks, FoodbankPK = SelectedFoodbank).Name
-            Width: =618
+            Width: =603
             X: =22
-            Y: =597
+            Y: =570
             ZIndex: =25
 
         LineChart3 As lineChart:
             Font: =Font.'Open Sans'
-            Height: =341
+            Height: =346
             Items: =colItemsChart
             NumberOfSeries: =2
-            Width: =618
+            Size: =13
+            Width: =603
             X: =22
-            Y: =618
+            Y: =591
             ZIndex: =26
 
         Legend5 As legend:
-            Height: =68
+            Height: =69
             ItemColorSet: =LineChart3.ItemColorSet
             Items: =LineChart3.SeriesLabels
             Size: =16
-            Width: =495
-            X: =85
-            Y: =968
+            Width: =483
+            X: =83
+            Y: =946
             ZIndex: =27
 

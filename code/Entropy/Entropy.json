@@ -927,7 +927,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/22/2023 13:52:44",
+  "HeaderLastSavedDateTimeUTC": "01/22/2023 13:55:52",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "2bd7eeaf-4f90-4742-862a-ffd37054dfa9": "\"/providers/microsoft.powerapps/apis/shared_onedriveforbusiness/connections/642592bca8d94d52b15cb9976795bc71\"",
@@ -954,7 +954,7 @@
     "72ca80fb63914274b26885d974d83f5c": 2
   },
   "OrderDataSource": {
-    "colAppBar": 83,
+    "colAppBar": 84,
     "colBasket": 85,
     "colDisplayedVisits": 87,
     "colItemsChart": 92,
@@ -979,7 +979,7 @@
     "LegendSample": 80,
     "LineChartSample": 79,
     "ListboxSample": 76,
-    "MyFoodbanks": 84,
+    "MyFoodbanks": 83,
     "Notifications": 78,
     "Notifications\\cr967_notification_statecode": 50,
     "Notifications\\cr967_notification_statuscode": 51,

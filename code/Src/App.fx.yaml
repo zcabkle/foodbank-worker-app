@@ -135,6 +135,12 @@ App As appinfo:
                 Screen: 'Daily Visit Page',
                 Id: 5,
                 ParentTab: "Visits"
+            },
+            {
+                Title: "Graphs",
+                Screen: 'Graphs Page',
+                Id: 5,
+                ParentTab: "Visits"
             }
         );
         
