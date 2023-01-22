@@ -608,8 +608,8 @@
         Text: |-
             ="Total Items In: " & Sum(colSumOfIncomingRecords, 'Sum of Incoming')
         Width: =326
-        X: =111
-        Y: =89
+        X: =104
+        Y: =95
         ZIndex: =33
 
     Label31_1 As label:
@@ -620,21 +620,21 @@
         Text: |-
             ="Total Items Out: " & Sum(colSumOfOutgoingRecords, 'Sum of Outgoing')
         Width: =279
-        X: =111
-        Y: =173
+        X: =104
+        Y: =186
         ZIndex: =34
 
     Icon4_1 As icon.ArrowUp:
         Color: =RGBA(54, 176, 75, 1)
         Icon: =Icon.ArrowUp
-        X: =40
-        Y: =92
+        X: =43
+        Y: =95
         ZIndex: =35
 
     Icon5_1 As icon.ArrowDown:
         Color: =RGBA(255, 0, 0, 1)
         X: =40
-        Y: =176
+        Y: =189
         ZIndex: =36
 
     Icon6 As icon.Trending:

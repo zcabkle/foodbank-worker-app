@@ -85,7 +85,7 @@
             Color: =RGBA(0, 18, 107, 1)
             FontWeight: =FontWeight.Bold
             Height: =115
-            Italic: =true
+            Italic: =If(Not(ThisItem.cr967_comments), true, false)
             OnSelect: =Select(Parent)
             Size: =15
             Text: |-
