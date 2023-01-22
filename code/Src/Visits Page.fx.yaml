@@ -27,6 +27,16 @@
             )
         );
         ClearCollect(
+            colIncomingRecords,
+            ShowColumns(
+                Filter(
+                    IncomingRecords,
+                    FoodbankKey_.FoodbankPK = SelectedFoodbank
+                ),
+                "cr967_datetime", "cr967_collectionid", "cr967_FoodbankKey_", "cr967_ItemKey", "cr967_quantity", "cr967_SupplierKey"
+            )
+        );
+        ClearCollect(
             colVisitsGroupedByDate,
             GroupBy(
                 AddColumns(
