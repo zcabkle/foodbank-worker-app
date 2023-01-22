@@ -50,6 +50,39 @@
         );
         Remove(colItemsChart, LookUp(colItemsChart, ShortDate = ""));
 
+    HtmlText2_11 As htmlViewer:
+        Height: =480
+        HtmlText: |-
+            ="<div style='width:620px;height:470px; border-radius: 20px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Width: =625
+        X: =7
+        Y: =549
+        ZIndex: =1
+
+    HtmlText2_10 As htmlViewer:
+        Height: =480
+        HtmlText: |-
+            ="<div style='width:620px;height:470px; border-radius: 20px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset -4px -4px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Width: =625
+        X: =7
+        Y: =69
+        ZIndex: =2
+
+    "'Appbar Cmpnt_8' As 'Appbar Cmpnt'":
+        Y: =1036
+        ZIndex: =6
+
+    "'Topbar Cmpnt_9' As 'Topbar Cmpnt'":
+        ZIndex: =7
+
     CompositeLineChart1 As group:
         Height: =5
         Width: =5
@@ -65,18 +98,18 @@
             Width: =611
             X: =14
             Y: =76
-            ZIndex: =18
+            ZIndex: =3
 
         LineChart1 As lineChart:
             Font: =Font.'Open Sans'
-            Height: =398
+            Height: =387
             Items: =colDisplayedVisits
             NumberOfSeries: =4
             Size: =13
             Width: =611
             X: =14
             Y: =90
-            ZIndex: =19
+            ZIndex: =4
 
         Legend2 As legend:
             Height: =52
@@ -84,75 +117,9 @@
             Items: =LineChart1.SeriesLabels
             Size: =16
             Width: =550
-            X: =37
-            Y: =497
-            ZIndex: =20
-
-    "'Appbar Cmpnt_8' As 'Appbar Cmpnt'":
-        Y: =1036
-        ZIndex: =21
-
-    "'Topbar Cmpnt_9' As 'Topbar Cmpnt'":
-        ZIndex: =22
-
-    Button15 As button:
-        Height: =59
-        OnSelect: |
-            =ClearCollect(
-                colItemsChart,
-                {
-                    ShortDate: "",
-                    In: 0,
-                    Out: 0
-                }
-            );
-            ForAll(
-                colSumOfIncomingRecords As Record,
-                Patch(
-                    colItemsChart,
-                    Defaults(colItemsChart),
-                    {
-                        ShortDate: Record.ShortDate,
-                        In: Record.'Sum of Incoming',
-                        Out: 0
-                    }
-                )
-            );
-            ForAll(
-                colSumOfOutgoingRecords As Record,
-                If(
-                    CountRows(
-                        Filter(
-                            colItemsChart,
-                            ShortDate = Text(Record.ShortDate)
-                        )
-                    ) > 0,
-                    Patch(
-                        colItemsChart,
-                        LookUp(
-                            colItemsChart,
-                            ShortDate = Text(Record.ShortDate)
-                        ),
-                        {Out: Record.'Sum of Outgoing'}
-                    ),
-                    Patch(
-                        colItemsChart,
-                        Defaults(colItemsChart),
-                        {
-                            ShortDate: Record.ShortDate,
-                            In: 0,
-                            Out: Record.'Sum of Outgoing'
-                        }
-                    )
-                )
-            );
-            Remove(colItemsChart, LookUp(colItemsChart, ShortDate = ""));
-        Size: =24
-        Text: ="Button"
-        Width: =127
-        X: =513
-        Y: =60
-        ZIndex: =23
+            X: =49
+            Y: =477
+            ZIndex: =5
 
     CompositeLineChart3 As group:
         Height: =5
@@ -169,26 +136,26 @@
             Width: =603
             X: =22
             Y: =570
-            ZIndex: =25
+            ZIndex: =8
 
         LineChart3 As lineChart:
             Font: =Font.'Open Sans'
-            Height: =346
+            Height: =372
             Items: =colItemsChart
             NumberOfSeries: =2
             Size: =13
             Width: =603
             X: =22
             Y: =591
-            ZIndex: =26
+            ZIndex: =9
 
         Legend5 As legend:
-            Height: =69
+            Height: =46
             ItemColorSet: =LineChart3.ItemColorSet
             Items: =LineChart3.SeriesLabels
             Size: =16
-            Width: =483
-            X: =83
-            Y: =946
-            ZIndex: =27
+            Width: =172
+            X: =238
+            Y: =963
+            ZIndex: =10
 
