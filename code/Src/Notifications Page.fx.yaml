@@ -106,11 +106,11 @@
             ZIndex: =7
 
         Button11_2 As button:
-            BorderColor: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,UnderstockedColor,ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,OverstockedColor)
+            BorderColor: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,varUnderstockedColor,ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,varOverstockedColor)
             BorderThickness: =0
             Color: =
-            DisabledBorderColor: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,UnderstockedColor,ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,OverstockedColor)
-            DisabledColor: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,UnderstockedColor,ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,OverstockedColor)
+            DisabledBorderColor: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,varUnderstockedColor,ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,varOverstockedColor)
+            DisabledColor: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,varUnderstockedColor,ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,varOverstockedColor)
             DisabledFill: =If(ThisItem.NotificationMessageType=NotificationMessageType.ItemUnderstocked,RGBA(255, 0, 0, 0.25),ThisItem.NotificationMessageType=NotificationMessageType.ItemOverstocked,RGBA(54, 176, 75, 0.2))
             DisplayMode: =DisplayMode.Disabled
             Fill: =RGBA(255, 161, 161, 1)
