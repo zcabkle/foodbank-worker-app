@@ -12,7 +12,7 @@
         TemplateFill: =
         TemplatePadding: =10
         TemplateSize: =214
-        Y: =115
+        Y: =183
         ZIndex: =2
 
         HtmlText2_4 As htmlViewer:
@@ -97,4 +97,42 @@
     "'Appbar Cmpnt_1' As 'Appbar Cmpnt'":
         Y: =1036
         ZIndex: =4
+
+    Button13 As button:
+        Height: =70
+        OnSelect: |
+            =ClearCollect(
+                colSumOfOutgoingRecords,
+                AddColumns(
+                    GroupBy(
+                        AddColumns(
+                            Filter(
+                                OutgoingRecords,
+                                FoodbankKey_.FoodbankPK = SelectedFoodbank
+                            ),
+                            "YourDate",
+                            DateValue(
+                                Text(
+                                    cr967_datetime,
+                                    ShortDate
+                                )
+                            )
+                        ),
+                        "YourDate",
+                        "DateGroup"
+                    );
+                    ,
+                    "Sum of Outgoing",
+                    Sum(
+                        DateGroup,
+                        Quantity
+                    )
+                )
+            );
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =27
+        Y: =113
+        ZIndex: =5
 

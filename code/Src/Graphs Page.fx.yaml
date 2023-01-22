@@ -1,41 +1,5 @@
 "'Graphs Page' As screen":
 
-    CompositeLineChart1_1 As group:
-        Height: =5
-        Width: =5
-        X: =80
-        Y: =80
-        ZIndex: =1
-
-        Title8_1 As label:
-            Align: =Align.Center
-            Height: =14
-            Text: ="Chart Title"
-            Width: =545
-            X: =56
-            Y: =506
-            ZIndex: =2
-
-        LineChart1_1 As lineChart:
-            Font: =Font.'Open Sans'
-            Height: =220
-            Items: =colDisplayedVisits
-            NumberOfSeries: =4
-            Width: =545
-            X: =56
-            Y: =506
-            ZIndex: =3
-
-        Legend1_1 As legend:
-            Height: =44
-            ItemColorSet: =LineChart1_1.ItemColorSet
-            Items: =LineChart1_1.SeriesLabels
-            Size: =18
-            Width: =436
-            X: =96
-            Y: =729
-            ZIndex: =4
-
     CompositeColumnChart1 As group:
         Height: =5
         Width: =5
@@ -45,31 +9,28 @@
 
         Title9 As label:
             Align: =Align.Center
-            Height: =14
+            Height: =19
             Text: ="Chart Title"
-            Width: =553
-            X: =28
+            Width: =640
             Y: =213
             ZIndex: =6
 
         ColumnChart1 As barChart:
             GridStyle: =GridStyle.YOnly
-            Height: =225
+            Height: =310
             Items: =colDisplayedVisits
             NumberOfSeries: =4
-            Width: =553
-            X: =28
-            Y: =230
+            Width: =640
+            Y: =229
             ZIndex: =7
 
         Legend2 As legend:
-            Height: =45
+            Height: =42
             ItemColorSet: =ColumnChart1.ItemColorSet
             Items: =ColumnChart1.SeriesLabels
             Size: =18
-            Width: =442
-            X: =83
-            Y: =461
+            Width: =640
+            Y: =555
             ZIndex: =8
 
     Label28 As label:
@@ -153,7 +114,7 @@
         Size: =21
         Text: ="Who relies on this foodbank"
         Width: =329
-        X: =143
+        X: =96
         Y: =127
         ZIndex: =16
 
