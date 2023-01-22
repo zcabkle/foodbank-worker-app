@@ -146,16 +146,11 @@ App As appinfo:
         
         Set(
             varMenuPrimaryColor,
-            RGBA(
-                245,
-                245,
-                245,
-                1
-            )
+            RGBA(0, 18, 107, 1)
         );
         Set(
             varMenuSecondaryColor,
-            RGBA(153, 207, 236, 1)
+            RGBA(228, 120, 255, 1)
         );
         Set(OverstockedColor, RGBA(54, 176, 75, 1));
         Set(UnderstockedColor, RGBA(255, 0, 0, 1));
