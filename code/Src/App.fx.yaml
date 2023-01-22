@@ -153,7 +153,7 @@ App As appinfo:
             RGBA(228, 120, 255, 1)
         );
         Set(varBoldOverstockedColor, RGBA(54, 176, 75, 1));
-        Set(varUnderstockedColor, RGBA(255, 0, 0, 1));
+        Set(varBoldUnderstockedColor, RGBA(255, 0, 0, 1));
         Set(varNeitherColor, RGBA(245, 245, 245, 1));
         Set(
             varTabSelected,
