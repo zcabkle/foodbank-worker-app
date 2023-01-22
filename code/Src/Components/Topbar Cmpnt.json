@@ -208,7 +208,7 @@
         "Name": "Button8",
         "Parent": "Topbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 797,
+        "PublishOrderIndex": 795,
         "Rules": [
           {
             "Category": "Data",
@@ -651,7 +651,7 @@
         "Name": "Button8_11",
         "Parent": "Topbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 798,
+        "PublishOrderIndex": 796,
         "Rules": [
           {
             "Category": "Data",
@@ -1111,7 +1111,7 @@
         "Name": "Topbar_Arrow_btn",
         "Parent": "Topbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 799,
+        "PublishOrderIndex": 797,
         "Rules": [
           {
             "Category": "Data",
@@ -1444,7 +1444,7 @@
         "Name": "ArrowIcon",
         "Parent": "Topbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 800,
+        "PublishOrderIndex": 798,
         "Rules": [
           {
             "Category": "Design",
@@ -1693,7 +1693,7 @@
         "Name": "Label2",
         "Parent": "Topbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 801,
+        "PublishOrderIndex": 799,
         "Rules": [
           {
             "Category": "Data",
@@ -2030,7 +2030,7 @@
         "Name": "PersonIcon",
         "Parent": "Topbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 802,
+        "PublishOrderIndex": 800,
         "Rules": [
           {
             "Category": "Design",
@@ -2270,7 +2270,7 @@
         "Name": "NotificationIcon",
         "Parent": "Topbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 803,
+        "PublishOrderIndex": 801,
         "Rules": [
           {
             "Category": "Design",
@@ -2494,7 +2494,7 @@
         "Name": "Circle1",
         "Parent": "Topbar Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 804,
+        "PublishOrderIndex": 802,
         "Rules": [
           {
             "Category": "Design",
