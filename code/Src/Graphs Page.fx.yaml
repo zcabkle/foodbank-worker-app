@@ -96,7 +96,7 @@
                     )
                 )
             );
-            Remove(colSumOfOutgoingRecords, LookUp(colSumOfOutgoingRecords, ShortDate = "");
+            Remove(colSumOfOutgoingRecords, LookUp(colSumOfOutgoingRecords, Text(ShortDate) = "");
         Size: =24
         Text: ="Button"
         Width: =280
