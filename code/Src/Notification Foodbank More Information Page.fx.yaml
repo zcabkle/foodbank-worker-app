@@ -301,7 +301,7 @@
                 ZIndex: =2
 
     Label27 As label:
-        Color: =If(Gallery3.Selected.NotificationMessageType = NotificationMessageType.ItemOverstocked, varBoldOverstockedColor, varBoldUnderstockedColoredColor)
+        Color: =If(Gallery3.Selected.NotificationMessageType = NotificationMessageType.ItemOverstocked, varBoldOverstockedColor, varBoldUnderstockedColor)
         Height: =161
         Size: =21
         Text: =Gallery3.Selected.Message & ", contact them by telephone or email to help them out!"
