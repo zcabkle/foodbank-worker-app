@@ -96,7 +96,7 @@
                     )
                 )
             );
-            Remove(colItemsChart, LookUp(colItemsChart, ShortDate = "");
+            Remove(colItemsChart, LookUp(colItemsChart, ShortDate = ""));
         Size: =24
         Text: ="Button"
         Width: =280
