@@ -129,10 +129,39 @@
                     )
                 )
             );
+            
+            ClearCollect(
+                colSumOfIncomingRecords,
+                AddColumns(
+                    GroupBy(
+                        AddColumns(
+                            Filter(
+                                IncomingRecords,
+                                FoodbankKey_.FoodbankPK = SelectedFoodbank
+                            ),
+                            "YourDate",
+                            DateValue(
+                                Text(
+                                    cr967_datetime,
+                                    ShortDate
+                                )
+                            )
+                        ),
+                        "YourDate",
+                        "DateGroup"
+                    );
+                    ,
+                    "Sum of Incoming",
+                    Sum(
+                        DateGroup,
+                        Quantity
+                    )
+                )
+            );
         Size: =24
         Text: ="Button"
         Width: =280
-        X: =27
-        Y: =113
+        X: =30
+        Y: =130
         ZIndex: =5
 
