@@ -26,11 +26,34 @@
 
     FormViewer3 As formViewer:
         DataSource: =Foodbanks
-        Height: =560
+        Height: =767
         Item: =Gallery3.Selected.FromFoodbankKey
         Width: =640
         Y: =269
         ZIndex: =5
+
+        Image_DataCard13 As typedDataCard.largeImageViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr967_image"
+            Default: =ThisItem.Image
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Foodbanks],DataSourceInfo.DisplayName,"cr967_image")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardValue91 As image:
+                DisplayMode: =Parent.DisplayMode
+                Height: =230
+                Image: =Parent.Default
+                Width: =(Parent.Width - 60) * 0.6
+                X: =147
+                Y: =9
+                ZIndex: =2
 
         Name_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
@@ -43,13 +66,13 @@
             Required: =true
             Width: =640
             X: =0
-            Y: =0
+            Y: =1
             ZIndex: =4
 
             DataCardKey85 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -63,7 +86,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey85.X + DataCardKey85.Width
@@ -77,17 +100,16 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Foodbanks],DataSourceInfo.DisplayName,"cr967_operatinghours")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =105
+            Height: =131
             Required: =true
             Width: =640
             X: =0
-            Y: =1
+            Y: =2
             ZIndex: =4
 
             DataCardKey86 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
+                Height: =68
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -97,15 +119,14 @@
 
             DataCardValue71 As label:
                 DisplayMode: =Parent.DisplayMode
-                Height: =84
+                Height: =131
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey86.X + DataCardKey86.Width
-                Y: =10
                 ZIndex: =2
 
         Email_DataCard2 As typedDataCard.emailViewCard:
@@ -119,13 +140,13 @@
             Required: =true
             Width: =640
             X: =0
-            Y: =2
+            Y: =3
             ZIndex: =4
 
             DataCardKey87 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -142,9 +163,9 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
-                Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey87.X + DataCardKey87.Width
+                Size: =18
+                Width: =384
+                X: =225
                 Y: =10
                 ZIndex: =2
 
@@ -159,13 +180,13 @@
             Required: =true
             Width: =640
             X: =0
-            Y: =3
+            Y: =4
             ZIndex: =4
 
             DataCardKey88 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -179,7 +200,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey88.X + DataCardKey88.Width
@@ -197,13 +218,13 @@
             Required: =true
             Width: =640
             X: =0
-            Y: =4
+            Y: =5
             ZIndex: =4
 
             DataCardKey89 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -217,7 +238,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey89.X + DataCardKey89.Width
@@ -235,13 +256,13 @@
             Required: =false
             Width: =640
             X: =0
-            Y: =5
+            Y: =6
             ZIndex: =4
 
             DataCardKey90 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -255,7 +276,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey90.X + DataCardKey90.Width
@@ -273,13 +294,13 @@
             Required: =true
             Width: =640
             X: =0
-            Y: =6
+            Y: =7
             ZIndex: =4
 
             DataCardKey91 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -293,7 +314,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey91.X + DataCardKey91.Width

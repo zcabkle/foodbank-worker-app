@@ -43,7 +43,7 @@
             DataCardKey37 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -53,16 +53,16 @@
 
             DataCardValue23 As htmlViewer:
                 AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
                 DisplayMode: =Parent.DisplayMode
                 Height: =45
-                HtmlText: |-
-                    ="<a href='mailto:" & Parent.Default & "'>" & Parent.Default & "</a>"
+                HtmlText: =Parent.Default
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
-                Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey37.X + DataCardKey37.Width
+                Size: =18
+                Width: =348
+                X: =262
                 Y: =10
                 ZIndex: =2
 
@@ -83,7 +83,7 @@
             DataCardKey27 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -121,7 +121,7 @@
             DataCardKey26 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -135,7 +135,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey26.X + DataCardKey26.Width
@@ -159,7 +159,7 @@
             DataCardKey28 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -173,7 +173,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey28.X + DataCardKey28.Width

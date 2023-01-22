@@ -457,8 +457,7 @@
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
-                X: =28
-                Y: =16
+                X: =27
                 ZIndex: =1
 
             DataCardValue30 As label:
@@ -546,10 +545,4 @@
         X: =583
         Y: =68
         ZIndex: =7
-
-    Rectangle2 As rectangle:
-        Height: =1
-        Width: =640
-        Y: =598
-        ZIndex: =8
 

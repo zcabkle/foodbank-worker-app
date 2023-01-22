@@ -51,7 +51,7 @@
         "Name": "Topbar_Empty bg",
         "Parent": "Topbar_Empty Cmpnt",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 820,
+        "PublishOrderIndex": 809,
         "Rules": [
           {
             "Category": "Design",

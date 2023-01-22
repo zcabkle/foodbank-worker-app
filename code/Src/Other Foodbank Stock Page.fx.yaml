@@ -115,8 +115,8 @@
                 =Select(Parent);
                 Navigate('View Stock Information Other Foodbank Page');
             Width: =49
-            X: =532
-            Y: =77
+            X: =542
+            Y: =85
             ZIndex: =6
 
         Button11_1 As button:

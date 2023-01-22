@@ -1604,19 +1604,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Image_DataCard7.AddPicture5.AccessibleLabel"
+                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.FormViewer2.ShareQuantityWith_DataCard2.DataCardValue87.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Image_DataCard7.AddPicture5.AccessibleLabel",
+                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.FormViewer2.ShareQuantityWith_DataCard2.DataCardValue87.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "View Stock Information Other Foodbank Page",
-                "type": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Image_DataCard7.AddPicture5"
+                "type": "'View Stock Information Other Foodbank Page'.FormViewer2.ShareQuantityWith_DataCard2.DataCardValue87"
               }
             }
           ],
@@ -1634,19 +1634,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Name_DataCard1.DataCardValue12.AccessibleLabel"
+                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.FormViewer2.ShareItemWith_DataCard2.DataCardValue86.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Name_DataCard1.DataCardValue12.AccessibleLabel",
+                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.FormViewer2.ShareItemWith_DataCard2.DataCardValue86.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "View Stock Information Other Foodbank Page",
-                "type": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Name_DataCard1.DataCardValue12"
+                "type": "'View Stock Information Other Foodbank Page'.FormViewer2.ShareItemWith_DataCard2.DataCardValue86"
               }
             }
           ],
@@ -1664,19 +1664,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Description_DataCard1.DataCardValue13.AccessibleLabel"
+                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.FormViewer2.ItemCategory_DataCard2.DataCardValue85.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Description_DataCard1.DataCardValue13.AccessibleLabel",
+                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.FormViewer2.ItemCategory_DataCard2.DataCardValue85.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "View Stock Information Other Foodbank Page",
-                "type": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Description_DataCard1.DataCardValue13"
+                "type": "'View Stock Information Other Foodbank Page'.FormViewer2.ItemCategory_DataCard2.DataCardValue85"
               }
             }
           ],
@@ -1694,169 +1694,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Quantity_DataCard3.DataCardValue14.AccessibleLabel"
+                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.FormViewer2.StockLevel_DataCard2.DataCardValue69.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Quantity_DataCard3.DataCardValue14.AccessibleLabel",
+                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.FormViewer2.StockLevel_DataCard2.DataCardValue69.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "View Stock Information Other Foodbank Page",
-                "type": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Quantity_DataCard3.DataCardValue14"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.ItemCategory_DataCard1.DataCardValue15.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.ItemCategory_DataCard1.DataCardValue15.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "View Stock Information Other Foodbank Page",
-                "type": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.ItemCategory_DataCard1.DataCardValue15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.StockLevel_DataCard1.DataCardValue19.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.StockLevel_DataCard1.DataCardValue19.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "View Stock Information Other Foodbank Page",
-                "type": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.StockLevel_DataCard1.DataCardValue19"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.ShareItemWith_DataCard1.DataCardValue16.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.ShareItemWith_DataCard1.DataCardValue16.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "View Stock Information Other Foodbank Page",
-                "type": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.ShareItemWith_DataCard1.DataCardValue16"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.ShareQuantityWith_DataCard1.DataCardValue17.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.ShareQuantityWith_DataCard1.DataCardValue17.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "View Stock Information Other Foodbank Page",
-                "type": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.ShareQuantityWith_DataCard1.DataCardValue17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.ShareStockLevelWith_DataCard1.DataCardValue18.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.ShareStockLevelWith_DataCard1.DataCardValue18.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "View Stock Information Other Foodbank Page",
-                "type": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.ShareStockLevelWith_DataCard1.DataCardValue18"
+                "type": "'View Stock Information Other Foodbank Page'.FormViewer2.StockLevel_DataCard2.DataCardValue69"
               }
             }
           ],
@@ -3824,6 +3674,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.FormViewer2.ShareStockLevelWith_DataCard1.DataCardValue90.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.FormViewer2.ShareStockLevelWith_DataCard1.DataCardValue90.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "View Stock Information Other Foodbank Page",
+                "type": "'View Stock Information Other Foodbank Page'.FormViewer2.ShareStockLevelWith_DataCard1.DataCardValue90"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Parcels Page'.'Search (Parcels)'.AccessibleLabel"
                 }
               ],
@@ -5684,79 +5564,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Item"
+                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.FormViewer2.Item"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Item",
+                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.FormViewer2.Item",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Item",
                 "module": "View Stock Information Other Foodbank Page",
-                "type": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Quantity_DataCard3.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Quantity_DataCard3.Visible",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "View Stock Information Other Foodbank Page",
-                "type": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.Quantity_DataCard3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.StockLevel_DataCard1.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.StockLevel_DataCard1.Visible",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "View Stock Information Other Foodbank Page",
-                "type": "'View Stock Information Other Foodbank Page'.'View Stock Information Other Foodbank (View Stock Information Other Foodbank)'.StockLevel_DataCard1"
+                "type": "'View Stock Information Other Foodbank Page'.FormViewer2"
               }
             }
           ],

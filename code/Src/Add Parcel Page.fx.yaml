@@ -1,4 +1,5 @@
 "'Add Parcel Page' As screen":
+    Height: =
 
     "'Banner (Add Parcel)' As rectangle":
         Fill: =varNeitherColor
@@ -53,20 +54,9 @@
             Required: =false
             Update: =Image6.Image
             Width: =640
-            X: =0
+            X: =
             Y: =0
             ZIndex: =1
-
-            DataCardKey13 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.4
-                Wrap: =false
-                X: =30
-                Y: =10 + (AddPicture3.Height / 2) - (Self.Height / 2)
-                ZIndex: =1
 
             Image6 As image:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
@@ -82,7 +72,7 @@
             AddPicture3 As addMedia:
                 Height: =225
                 Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey13.X + DataCardKey13.Width
+                X: =146
                 Y: =10
                 ZIndex: =3
 
@@ -104,13 +94,13 @@
 
             StarVisible11 As label:
                 Align: =Align.Center
-                Height: =DataCardKey13.Height
+                Height: =
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey13.Y
+                Y: =
                 ZIndex: =5
 
         Description_DataCard7 As typedDataCard.textualMultiLineEditCard:
@@ -131,7 +121,7 @@
             DataCardKey49 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -151,7 +141,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =21
+                Size: =18
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey49.X + DataCardKey49.Width
@@ -203,7 +193,7 @@
             DataCardKey70 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -223,7 +213,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
-                Size: =21
+                Size: =18
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey70.X + DataCardKey70.Width
@@ -249,7 +239,7 @@
             StarVisible54 As label:
                 Align: =Align.Center
                 Height: =DataCardKey70.Height
-                Size: =21
+                Size: =18
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
@@ -348,7 +338,7 @@
             DataCardKey68 As label:
                 AutoHeight: =true
                 Height: =48
-                Size: =21
+                Size: =18
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
@@ -368,7 +358,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =21
+                Size: =18
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey68.X + DataCardKey68.Width
@@ -394,7 +384,7 @@
             StarVisible52 As label:
                 Align: =Align.Center
                 Height: =DataCardKey68.Height
-                Size: =21
+                Size: =18
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
