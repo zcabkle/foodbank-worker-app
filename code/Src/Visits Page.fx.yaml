@@ -54,23 +54,6 @@
             )
         );
         ClearCollect(
-            colOutgoingRecordsGroupedByDate,
-            GroupBy(
-                AddColumns(
-                    colOutgoingRecords,
-                    "YourDate",
-                    DateValue(
-                        Text(
-                            cr967_datetime,
-                            ShortDate
-                        )
-                    )
-                ),
-                "YourDate", "cr967_collectionid",
-                "DateGroup"
-            )
-        );
-        ClearCollect(
             colDisplayedVisits,
             {
                 Date: "",

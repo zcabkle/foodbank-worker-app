@@ -918,7 +918,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/22/2023 12:43:42",
+  "HeaderLastSavedDateTimeUTC": "01/22/2023 12:46:28",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "2bd7eeaf-4f90-4742-862a-ffd37054dfa9": "\"/providers/microsoft.powerapps/apis/shared_onedriveforbusiness/connections/642592bca8d94d52b15cb9976795bc71\"",
@@ -948,11 +948,10 @@
     "colAppBar": 83,
     "colBasket": 85,
     "colDisplayedVisits": 87,
-    "colIncomingRecords": 94,
+    "colIncomingRecords": 93,
     "colOutgoingRecords": 89,
-    "colOutgoingRecordsGroupedByDate": 91,
-    "colSumOfIncomingRecords": 92,
-    "colSumOfOutgoingRecords": 93,
+    "colSumOfIncomingRecords": 91,
+    "colSumOfOutgoingRecords": 92,
     "ColumnChartSample": 82,
     "colVisitsGroupedByDate": 90,
     "colVisitsTable": 88,
@@ -2865,7 +2864,7 @@
       "typedDataCard": 97
     },
     "DeserializationLoadTime": 11.2370535,
-    "ErrorCount": 0
+    "ErrorCount": 16
   },
   "WasLocalDatabaseReferencesEmpty": false
 }
