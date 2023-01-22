@@ -90,7 +90,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
-                Size: =21
+                Size: =18
                 Width: =270
                 X: =320
                 ZIndex: =2
@@ -158,7 +158,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
-                Size: =21
+                Size: =18
                 Width: =305
                 X: =322
                 ZIndex: =2
@@ -228,7 +228,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
-                Size: =21
+                Size: =18
                 Width: =303
                 X: =320
                 ZIndex: =2
@@ -296,7 +296,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
-                Size: =21
+                Size: =18
                 Width: =300
                 X: =322
                 ZIndex: =2
@@ -366,7 +366,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
-                Size: =21
+                Size: =18
                 Width: =300
                 X: =DataCardKey35.X + DataCardKey35.Width
                 ZIndex: =2
@@ -429,7 +429,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =242
                 X: =318
@@ -443,7 +443,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Stock],DataSourceInfo.DisplayName,"cr967_description")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =130
+            Height: =108
             Required: =false
             Width: =640
             X: =0
@@ -471,7 +471,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =If(IsBlank(Parent.Default), "No description given", Parent.Default)
                 Width: =300
                 X: =316
@@ -484,7 +484,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Stock],DataSourceInfo.DisplayName,"cr967_quantity")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =81
+            Height: =40
             Required: =false
             Width: =640
             X: =0
@@ -498,8 +498,8 @@
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
-                X: =28
-                Y: =32
+                X: =30
+                Y: =21
                 ZIndex: =1
 
             DataCardValue31 As label:
@@ -508,11 +508,11 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =253
-                X: =316
-                Y: =35
+                X: =318
+                Y: =21
                 ZIndex: =2
 
     "'Item Name (View Stock Information)' As label":
@@ -550,6 +550,6 @@
     Rectangle2 As rectangle:
         Height: =1
         Width: =640
-        Y: =620
+        Y: =598
         ZIndex: =8
 

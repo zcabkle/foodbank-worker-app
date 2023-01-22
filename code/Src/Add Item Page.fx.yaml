@@ -126,7 +126,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =21
+                Size: =18
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey5.X + DataCardKey5.Width
@@ -198,7 +198,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
-                Size: =21
+                Size: =18
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey58.X + DataCardKey58.Width
@@ -270,7 +270,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
-                Size: =21
+                Size: =18
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey54.X + DataCardKey54.Width
@@ -342,7 +342,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
-                Size: =21
+                Size: =18
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey55.X + DataCardKey55.Width
@@ -414,7 +414,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
-                Size: =21
+                Size: =18
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey56.X + DataCardKey56.Width
@@ -486,7 +486,7 @@
                 SearchFields: =["Value"]
                 SearchItems: =[]
                 SelectMultiple: =false
-                Size: =21
+                Size: =18
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey57.X + DataCardKey57.Width
@@ -631,7 +631,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =21
+                Size: =18
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey51.X + DataCardKey51.Width
@@ -703,7 +703,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =21
+                Size: =18
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =DataCardKey53.X + DataCardKey53.Width
