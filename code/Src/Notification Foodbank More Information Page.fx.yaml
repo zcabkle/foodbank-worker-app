@@ -4,7 +4,7 @@
         BorderThickness: =0
         DisabledFill: =If(Gallery3.Selected.NotificationMessageType = NotificationMessageType.ItemOverstocked, RGBA(54, 176, 75, 0.2), RGBA(255, 0, 0, 0.25))
         DisplayMode: =DisplayMode.Disabled
-        Fill: =If(Gallery3.Selected.NotificationMessageType = NotificationMessageType.ItemOverstocked, RGBA(54, 176, 75, 0.2), RGBA(255, 0, 0, 0.25))
+        Fill: =If(Gallery3.Selected.NotificationMessageType = NotificationMessageType.ItemOverstocked, varSoftOverstockedColor, varSoftUnderstockedColor)
         Height: =177
         RadiusBottomLeft: =40
         RadiusBottomRight: =40

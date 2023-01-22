@@ -4,11 +4,11 @@
         Fill: |-
             =If(
                 'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Understocked,
-            	varBoldUnderstockedColor,
+            	varSoftUnderstockedColor,
                 'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Neither,
             	varNeitherColor,
                 'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Overstocked,
-            	varBoldOverstockedColor,
+            	varSoftOverstockedColor,
             	RGBA(0, 0, 0, 0)
             )
         Height: =94
