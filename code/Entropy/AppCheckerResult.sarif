@@ -5774,36 +5774,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Daily Visit Page'.Label15.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Daily Visit Page'.Label15.Text",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Daily Visit Page",
-                "type": "'Daily Visit Page'.Label15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Daily Visit Page'.Gallery2.Items"
                 }
               ],
