@@ -7,13 +7,13 @@
         Height: =85
         Width: =640
         Y: =34
-        ZIndex: =1
-
-    "'Topbar (Other Foodbank Stock)' As 'Topbar Cmpnt'":
         ZIndex: =2
 
+    "'Topbar (Other Foodbank Stock)' As 'Topbar Cmpnt'":
+        ZIndex: =3
+
     "'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)' As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Height: =828
+        Height: =836
         Items: |-
             =Search(
                 Filter(
@@ -34,8 +34,8 @@
         TemplatePadding: =10
         TemplateSize: =238
         Visible: =Not('Empty Stock (Other Foodbank Stock)'.Visible)
-        Y: =208
-        ZIndex: =3
+        Y: =200
+        ZIndex: =4
 
         HtmlText2_7 As htmlViewer:
             Height: =238
@@ -169,23 +169,6 @@
             Y: =94
             ZIndex: =9
 
-    "'Search (Other Foodbank Stock)' As text":
-        Color: =RGBA(0, 18, 107, 1)
-        Default: =""
-        Height: =70
-        HintText: ="Search for an item"
-        HoverFill: =RGBA(215, 215, 215, 0.8)
-        PaddingLeft: =10
-        RadiusBottomLeft: =40
-        RadiusBottomRight: =40
-        RadiusTopLeft: =40
-        RadiusTopRight: =40
-        Size: =21
-        Width: =514
-        X: =15
-        Y: =135
-        ZIndex: =4
-
     "'Viewing stock at foodbank (Other Foodbank Stock)' As label":
         Align: =Align.Center
         Color: =RGBA(0, 18, 107, 1)
@@ -195,7 +178,7 @@
         Text: ="Viewing stock at " & 'Other_Foodbanks_Gallery (Other Foodbanks)'.Selected.Name
         Width: =640
         Y: =60
-        ZIndex: =5
+        ZIndex: =6
 
     "'Empty Stock (Other Foodbank Stock)' As label":
         Align: =Align.Center
@@ -206,14 +189,53 @@
         Width: =475
         X: =82
         Y: =525
-        ZIndex: =6
+        ZIndex: =7
 
     "'Appbar (Other Foodbank Stock)' As 'Appbar Cmpnt'":
         Y: =1036
-        ZIndex: =7
+        ZIndex: =8
 
     "'Filter_btn Cmpnt_4' As 'Filter_btn Cmpnt'":
-        X: =550
-        Y: =132
-        ZIndex: =8
+        X: =535
+        Y: =122
+        ZIndex: =9
+
+    Group17 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =10
+
+        HtmlText2_35 As htmlViewer:
+            Height: =85
+            HtmlText: |-
+                ="<div style='margin-left:5px; margin-top:5px; width:514px;height:70px; border-radius: 40px; background-color:rgba(255, 255, 255, 1); box-shadow: 0px 5px 5px 0px rgba(210, 210, 210, 0.5), inset 0px 0px 16px 0px rgba(210, 210, 210, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);'></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Width: =529
+            X: =18
+            Y: =123
+            ZIndex: =1
+
+        "'Search (Other Foodbank Stock)' As text":
+            Clear: =true
+            Color: =RGBA(0, 18, 107, 1)
+            Default: =""
+            Fill: =Color.Transparent
+            Height: =70
+            HintText: ="Search for an item"
+            HoverFill: =RGBA(215, 215, 215, 0.8)
+            PaddingLeft: =10
+            RadiusBottomLeft: =40
+            RadiusBottomRight: =40
+            RadiusTopLeft: =40
+            RadiusTopRight: =40
+            Size: =21
+            Width: =514
+            X: =21
+            Y: =130
+            ZIndex: =5
 

@@ -675,14 +675,14 @@
                 ZIndex: =4
 
     "'Banner2 (View Stock Information Other Foodbank)' As rectangle":
-        Fill: |
+        Fill: |-
             =If(
                 (('Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.Selected.StockLevel = StockLevel.Overstocked) && ('Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.Selected.ShareStockLevelWith = ShareWith.Foodbanks || 'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.Selected.ShareStockLevelWith = ShareWith.'Foodbanks & Public')),
                 varSoftOverstockedColor,
                 (('Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.Selected.StockLevel = StockLevel.Understocked) && ('Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.Selected.ShareStockLevelWith = ShareWith.Foodbanks || 'Other_Foodbank_Stock_Gallery (Other Foodbank Stock)'.Selected.ShareStockLevelWith = ShareWith.'Foodbanks & Public')),
                 varSoftUnderstockedColor,
                 varNeitherColor
-            );
+            )
         Height: =60
         Width: =640
         Y: =120
