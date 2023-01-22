@@ -85,7 +85,7 @@
                             OutgoingRecords,
                             FoodbankKey_.FoodbankPK = SelectedFoodbank
                         ),
-                        "YourDate",
+                        "ShortDate",
                         DateValue(
                             Text(
                                 cr967_datetime,
@@ -93,7 +93,7 @@
                             )
                         )
                     ),
-                    "YourDate",
+                    "ShortDate",
                     "DateGroup"
                 );
                 ,
@@ -113,7 +113,7 @@
                             IncomingRecords,
                             FoodbankKey_.FoodbankPK = SelectedFoodbank
                         ),
-                        "YourDate",
+                        "ShortDate",
                         DateValue(
                             Text(
                                 cr967_datetime,
@@ -121,7 +121,7 @@
                             )
                         )
                     ),
-                    "YourDate",
+                    "ShortDate",
                     "DateGroup"
                 );
                 ,
