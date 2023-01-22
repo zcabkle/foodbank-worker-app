@@ -152,9 +152,9 @@ App As appinfo:
             varMenuSecondaryColor,
             RGBA(228, 120, 255, 1)
         );
-        Set(OverstockedColor, RGBA(54, 176, 75, 1));
-        Set(UnderstockedColor, RGBA(255, 0, 0, 1));
-        Set(NeitherColor, RGBA(245, 245, 245, 1));
+        Set(varOverstockedColor, RGBA(54, 176, 75, 1));
+        Set(varUnderstockedColor, RGBA(255, 0, 0, 1));
+        Set(varNeitherColor, RGBA(245, 245, 245, 1));
         Set(
             varTabSelected,
             0
