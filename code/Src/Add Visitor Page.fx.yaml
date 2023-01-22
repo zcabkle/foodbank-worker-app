@@ -1,7 +1,7 @@
 "'Add Visitor Page' As screen":
 
     "'Banner (Edit Parcel Information)_1' As rectangle":
-        Fill: =NeitherColor
+        Fill: =varNeitherColor
         Height: =84
         Width: =640
         Y: =35

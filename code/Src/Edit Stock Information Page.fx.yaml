@@ -4,9 +4,9 @@
         Fill: |-
             =If(
                 'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Understocked,
-            	UnderstockedColor,
+            	varBoldUnderstockedColor,
                 'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Neither,
-            	NeitherColor,
+            	varNeitherColor,
                 'MyStock_Gallery (Home)'.Selected.StockLevel = StockLevel.Overstocked,
             	varBoldOverstockedColor,
             	RGBA(0, 0, 0, 0)

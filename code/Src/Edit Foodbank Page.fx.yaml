@@ -3,7 +3,7 @@
 
     "'Banner (View Parcel Information)_1' As rectangle":
         Fill: |
-            =NeitherColor
+            =varNeitherColor
         Height: =80
         Width: =640
         Y: =40

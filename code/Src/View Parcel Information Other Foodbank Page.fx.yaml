@@ -2,7 +2,7 @@
 
     "'Banner (View Parcel Information Other Foodbank)' As rectangle":
         Fill: |
-            =NeitherColor
+            =varNeitherColor
         Height: =80
         Width: =640
         Y: =40
@@ -313,7 +313,7 @@
                 ZIndex: =4
 
     "'Banner2 (View Parcel Information Other Foodbank)' As rectangle":
-        Fill: =NeitherColor
+        Fill: =varNeitherColor
         Height: =60
         Width: =640
         Y: =120

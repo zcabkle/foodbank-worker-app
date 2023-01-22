@@ -1,7 +1,7 @@
 "'View Stock Information Other Foodbank Page' As screen":
 
     "'Banner (View Stock Information Other Foodbank)' As rectangle":
-        Fill: =NeitherColor
+        Fill: =varNeitherColor
         Height: =90
         Width: =640
         Y: =29
@@ -675,7 +675,7 @@
                 ZIndex: =4
 
     "'Banner2 (View Stock Information Other Foodbank)' As rectangle":
-        Fill: =NeitherColor
+        Fill: =varNeitherColor
         Height: =60
         Width: =640
         Y: =120

@@ -1,7 +1,7 @@
 "'Add Parcel Page' As screen":
 
     "'Banner (Add Parcel)' As rectangle":
-        Fill: =NeitherColor
+        Fill: =varNeitherColor
         Height: =92
         Width: =640
         Y: =27

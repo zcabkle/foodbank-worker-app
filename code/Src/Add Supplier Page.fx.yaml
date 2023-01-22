@@ -1,7 +1,7 @@
 "'Add Supplier Page' As screen":
 
     "'Banner (Edit Parcel Information)_2' As rectangle":
-        Fill: =NeitherColor
+        Fill: =varNeitherColor
         Height: =80
         Width: =640
         Y: =40

@@ -1,7 +1,7 @@
 "'Edit Parcel Information Page' As screen":
 
     "'Banner (Edit Parcel Information)' As rectangle":
-        Fill: =NeitherColor
+        Fill: =varNeitherColor
         Height: =85
         Width: =640
         Y: =34

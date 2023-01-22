@@ -1,7 +1,7 @@
 "'Other Foodbank Parcels Page' As screen":
 
     "'Banner (Other Foodbank Parcels)' As rectangle":
-        Fill: =NeitherColor
+        Fill: =varNeitherColor
         Height: =90
         Width: =640
         Y: =29
