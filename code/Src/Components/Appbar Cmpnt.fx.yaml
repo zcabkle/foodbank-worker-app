@@ -1,5 +1,5 @@
 "'Appbar Cmpnt' As CanvasComponent":
-    Fill: =Transparent
+    Fill: =Color.Transparent
     Height: =100
     Width: =App.Width
     X: =0
@@ -140,12 +140,12 @@
         ZIndex: =10
 
         Appbar_Transparent_btn As button:
-            BorderColor: =Transparent
+            BorderColor: =Color.Transparent
             BorderThickness: =0
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =Transparent
-            DisabledFill: =Transparent
-            Fill: =Transparent
+            DisabledColor: =Color.Transparent
+            DisabledFill: =Color.Transparent
+            Fill: =Color.Transparent
             FocusedBorderThickness: =0
             Height: =80
             HoverFill: =

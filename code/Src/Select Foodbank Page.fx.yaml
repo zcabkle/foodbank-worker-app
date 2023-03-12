@@ -2,7 +2,7 @@
 
     "'MyFoodbanks_Gallery (Select Foodbank)' As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Fill: |
-            =White
+            =Color.White
         Height: =997
         Items: |+
             =MyFoodbanks

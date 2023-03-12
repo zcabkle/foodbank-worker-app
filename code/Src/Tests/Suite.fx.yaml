@@ -1,0 +1,17 @@
+"'84b6614f-b0f1-41c0-9ec1-c55126ac893c' As TestSuite":
+    Description: =""
+    DisplayName: ="Suite"
+
+    "'e3dc1647-2a14-46e3-b811-6c0566590519' As TestCase":
+        Description: =""
+        DisplayName: ="Case"
+
+        Step1 As TestStep:
+            Description: ="Select 'Icon7_5' in row 1 in 'MyFoodbanks_Gallery (Select Foodbank)'"
+            Screen: =Select Foodbank Page
+            Value: =Select('MyFoodbanks_Gallery (Select Foodbank)', 1, 'Icon7_5')
+
+        Step2 As TestStep:
+            Description: ="Assert"
+            Value: =Assert()
+

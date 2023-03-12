@@ -25,7 +25,7 @@
                     DateValue(
                         Text(
                             cr967_datetime,
-                            ShortDate
+                            DateTimeFormat.ShortDate
                         )
                     )
                 ),
@@ -89,7 +89,7 @@
                         DateValue(
                             Text(
                                 cr967_datetime,
-                                ShortDate
+                                DateTimeFormat.ShortDate
                             )
                         )
                     ),
@@ -117,7 +117,7 @@
                         DateValue(
                             Text(
                                 cr967_datetime,
-                                ShortDate
+                                DateTimeFormat.ShortDate
                             )
                         )
                     ),
