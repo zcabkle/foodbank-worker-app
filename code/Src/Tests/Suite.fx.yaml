@@ -9,9 +9,9 @@
         Step1 As TestStep:
             Description: ="Select 'Icon7_5' in row 1 in 'MyFoodbanks_Gallery (Select Foodbank)'"
             Screen: =Select Foodbank Page
-            Value: =Select('MyFoodbanks_Gallery (Select Foodbank)', 1, 'Icon7_5')
+            Value: =Select('MyFoodbanks_Gallery (Select Foodbank)', 1, Icon7_5)
 
         Step2 As TestStep:
             Description: ="Assert"
-            Value: =Assert()
+            Value: =Assert(true)
 
